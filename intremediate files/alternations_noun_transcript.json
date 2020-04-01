@@ -1,0 +1,59 @@
+{
+	"1": [{
+			"alt": {
+				"([^jǯj̥č'])ee|^ee": ["\\1e"],
+				"([^jǯj̥č'])oo|^oo": ["\\1o"]
+			},
+			"cases": ["ACC.SG", "GEN.SG", "LOC.SG", "COM.SG", "ABE.SG", "NOM.PL", "ACC.PL", "GEN.PL", "ILL.PL", "LOC.PL", "COM.PL", "ABE.PL"]
+		}, {
+			"alt": {},
+			"cases": []
+		}
+	],
+	"2": [{
+			"alt": {
+				"([^jǯj̥č'])aa|^aa": ["\\1oaa"],
+				"([^jǯj̥č'])oo|^oo": ["\\1oaa"],
+				"([jǯj̥č'])ee": ["\\1aa"],
+				"([jǯj̥č'])aa": ["\\1ii"],
+				"uu": ["ue"],
+				"ii": ["ee"],
+				"([^jǯj̥č'])ue|^ue": ["\\1uu"],
+				"([^jǯj̥č'])ua|^ua": ["\\1uu"]
+			},
+			"cases": ["ILL.SG"]
+		}, {
+			"alt": {},
+			"cases": []
+		}
+	],
+	"3": [{
+			"alt": {
+				"([^jǯj̥č'])a|^a": ["\\1e"],
+				"([jǯj̥č'])a": ["\\1oa"],
+				"aa": ["oaa"],
+				"([jǯj̥č'])aaj": ["\\1iij"],
+				"([^jǯj̥č'])oa|^oa": ["\\1o"],
+				"([^jǯj̥č'])ua|^ua": ["\\1uu"]
+			},
+			"cases": ["COM.SG", "ACC.PL", "GEN.PL", "ILL.PL", "LOC.PL", "COM.PL", "ABE.PL"]
+		}, {
+			"alt": {},
+			"cases": []
+		}
+	],
+	"4": [{
+			"alt": {
+				"([jǯj̥č'])ee": ["\\1aa"],
+				"ue": ["ua"]
+			},
+			"cases": ["ILL.SG"]
+		}, {
+			"alt": {
+				"([jǯj̥č'])ee": ["\\1ii"],
+				"ue": ["uu"]
+			},
+			"cases": ["COM.SG", "ACC.PL", "GEN.PL", "ILL.PL", "LOC.PL", "COM.PL", "ABE.PL"]
+		}
+	]
+}

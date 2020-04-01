@@ -1,0 +1,36 @@
+﻿Тип чередования;глас0;глас1;глас2;Где?
+1а;о̄;оа\уа;;3SG.NPST
+1а;ё;ёа;;3SG.NPST
+1а;оа̄;а̄;;3SG.NPST
+1а;оа;а;;3SG.NPST
+1а;ёа̄;я̄;;3SG.NPST
+1а;ӯ;уэ;;3SG.NPST
+1а;ю̄;юэ;;3SG.NPST
+1а;ӣ;е̄\я̄;;3SG.NPST
+1а;э̄;а̄;;3SG.NPST
+1а;э̄;а;;3SG.NPST
+1а;е̄;я̄;;3SG.NPST
+1а;е;я;;3SG.NPST
+1б;о̄;о;оа;1SG.NPST, 2SG.NPST, 3SG.NPST, 4.NPST, 3SG.PST, 1PL.PST, 2PL.PST
+1б;э̄;э;а;1SG.NPST, 2SG.NPST, 3SG.NPST, 4.NPST, 3SG.PST, 1PL.PST, 2PL.PST
+2;ӯ;уэ;;1SG.NPST, 2SG.NPST, 3SG.NPST
+2;ю̄;юэ;;1SG.NPST, 2SG.NPST, 3SG.NPST
+2;ӣ;е̄;;1SG.NPST, 2SG.NPST, 3SG.NPST
+3;а̄;оа̄;;1SG.PST, 2SG.PST, 3PL.PST, 4.PST
+3;я̄;ӣ;;1SG.PST, 2SG.PST, 3PL.PST, 4.PST
+3;а;э̄;;1SG.PST, 2SG.PST, 3PL.PST, 4.PST
+3;оа;о̄;;1SG.PST, 2SG.PST, 3PL.PST, 4.PST
+3;ёа;ё;;1SG.PST, 2SG.PST, 3PL.PST, 4.PST
+3;уэ;ӯ;;1SG.PST, 2SG.PST, 3PL.PST, 4.PST
+3;юэ;ю̄;;1SG.PST, 2SG.PST, 3PL.PST, 4.PST
+3;уа;ӯ\о̄;;1SG.PST, 2SG.PST, 3PL.PST, 4.PST
+3;юа;ю̄;;1SG.PST, 2SG.PST, 3PL.PST, 4.PST
+4;а̄;оа̄;;весь PST
+4;я̄;ёа̄;;весь PST
+4;а;э,э̄;;весь PST
+4;я;е,е̄;;весь PST
+4;оа;о̄;;весь PST
+4;ёа;ё;;весь PST
+4;уэ;ӯ;;весь PST
+5;е̄;я̄;ӣ;SG.NPST - 1, весь PST - 2
+5;уэ;уа;ӯ;SG.NPST - 1, весь PST -2

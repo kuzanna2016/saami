@@ -1,0 +1,90 @@
+{
+	"1а": [{
+			"alt": {
+				"([^jǯj̥č'])oo|^oo": ["\\1oa", "\\1ua"],
+				"([jǯj̥č'])o": ["\\1oa"],
+				"oa": ["a"],
+				"uu": ["ue"],
+				"([^jǯj̥č'])ii|^ii": ["\\1ee", "\\1aa"],
+				"ee?": ["\\1a"]
+			},
+			"forms": ["3SG.NPST"]
+		}, {
+			"alt": {},
+			"forms": []
+		}
+	],
+	"1б": [{
+			"alt": {
+				"([^jǯj̥č'])oo|^oo": ["\\1o"],
+				"([^jǯj̥č'])ee|^ee": ["\\1e"]
+			},
+			"forms": ["1SG.NPST", "2SG.NPST", "4.NPST", "3SG.PST", "1PL.PST", "2PL.PST"]
+		}, {
+			"alt": {
+				"([^jǯj̥č'])oo|^oo": ["\\1oa"],
+				"([^jǯj̥č'])ee|^ee": ["\\1a"]
+			},
+			"forms": ["3SG.NPST"]
+		}
+	],
+	"2": [{
+			"alt": {
+				"uu": ["ue"],
+				"([jǯj̥č'])ii|^ii": ["\\1ee"]
+			},
+			"forms": ["1SG.NPST", "2SG.NPST", "3SG.NPST"]
+		}, {
+			"alt": {},
+			"forms": []
+		}
+	],
+	"3": [{
+			"alt": {
+				"([^jǯj̥č'])a|^a": ["\\1ee"],
+				"([^jǯj̥č'])aa|^aa": ["\\1oaa"],
+				"([jǯj̥č'])aa": ["\\1ii"],
+				"([^jǯj̥č'])oa|^oa": ["\\1oo"],
+				"([jǯj̥č'])oa": ["\\1o"],
+				"ue": ["uu"],
+				"([^jǯj̥č'])ua": ["\\1uu", "\\1oo"],
+				"([jǯj̥č'])ua": ["\\1uu"]
+			},
+			"forms": ["1SG.PST", "2SG.PST", "3PL.PST", "4.PST"]
+		}, {
+			"alt": {},
+			"forms": []
+		}
+	],
+	"4": [{
+			"alt": {
+				"a": ["\\1ee"],
+				"([^jǯj̥č'])aa|^aa": "\\1oaa",
+				"([jǯj̥č'])aa": "\\1oaa",
+				"([^jǯj̥č'])oa|^oa": "\\1oo",
+				"([jǯj̥č'])oa": "\\1o",
+				"([^jǯj̥č'])ue|^ue": "\\1uu"
+			},
+			"forms": ["1SG.PST", "2SG.PST", "3PL.PST", "4.PST"]
+		}, {
+			"alt": {
+				"a": ["\\1e"]
+			},
+			"forms": ["3SG.PST", "1PL.PST", "2PL.PST"]
+		}
+	],
+	"5": [{
+			"alt": {
+				"([jǯj̥č'])ee": ["\\1aa"],
+				"([^jǯj̥č'])ue|^ue": ["\\1ua"]
+			},
+			"forms": ["1SG.NPST", "2SG.NPST", "3SG.NPST"]
+		}, {
+			"alt": {
+				"([jǯj̥č'])ee": ["\\1ii"],
+				"([^jǯj̥č'])ue|^ue": ["\\1uu"]
+			},
+			"forms": ["1SG.PST", "2SG.PST", "3SG.PST", "1PL.PST", "2PL.PST", "3PL.PST", "4.PST"]
+		}
+	]
+}
