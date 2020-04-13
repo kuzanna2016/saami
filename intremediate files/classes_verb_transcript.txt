@@ -1,15 +1,16 @@
 {
-	1: [{
-			"alt": {
-				"([consonants]['̥]?){2}$": "\\1",
-				"([^jǯj̥č'])oo|^oo": "\\1o"
-			},
-			"cases": ["ACC.SG", "GEN.SG", "LOC.SG", "COM.SG", "ABE.SG", "PART","NOM.PL", "ACC.PL", "GEN.PL", "ILL.PL", "LOC.PL", "COM.PL", "ABE.PL"]
-		}, {
-			"alt": {},
-			"cases": ["NOM.SG", "ESS", "ILL.SG"]
-		}
-	],
+	1: {
+			"split_regex": "^(.*?[oaɨuei])((?:[bcdfghjklmnprstvxzčŋšžɲʒǯ]̥?'?){2}|h'?[bcdfghjklmnprstvxzčŋšžɲʒǯ]'?|[jʒǯčc]̥?'?)e$",
+			"cons_alts": [
+				{
+					"alt": {
+						""
+					},
+					"forms": []
+				}
+			]
+	
+	},
 	2: [{
 			"alt": {
 				"([^jǯj̥č'])aa|^aa": ["\\1oaa"],
