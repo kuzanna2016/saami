@@ -1,0 +1,10 @@
+pandas==1.1.3
+gensim==3.8.3
+numpy==1.19.2
+pymorphy2
+razdel
+nltk
+natasha==1.3.0
+scipy==1.2.1
+sklearn
+flask
