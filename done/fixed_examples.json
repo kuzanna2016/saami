@@ -1,0 +1,1402 @@
+[{
+		"cyrillic_backwards": "ама",
+		"transcription_backwards": "ama",
+		"cyrillic": "ама",
+		"transcription": "ama",
+		"derived_cyrillic": "ама",
+		"derived_transcription": "ama",
+		"form_cyrillic": "",
+		"form_transcription": "",
+		"pos": "",
+		"common_number": "",
+		"type": "",
+		"type_alternation": "",
+		"definitions": ["же; ведь", "однако, но", "тем не менее, всё-таки"],
+		"examples": [{
+				"example_cyrillic": "со̄нн ама пӯдӭ",
+				"example_transcription": "soonn ama puude",
+				"example_definition": "он же пришёл"
+			}, {
+				"example_cyrillic": "тыйй ама тэнн баяс тӣдӭтҍ",
+				"example_transcription": "tɨjj ama tenn bajas t'iidet",
+				"example_definition": "вы ведь знали об этом"
+			}, {
+				"example_cyrillic": "то̄нн тэнн баяс тӣдтӭкь, ама эгк ця̄ӆӆкма",
+				"example_transcription": "toonn tenn bajas t'iidtek', ama egk c'aal̥l̥kma",
+				"example_definition": "ты об этом знал, однако не сказал"
+			}, {
+				"example_cyrillic": "тыйй, ама, мушшьтэ тэнн баяс",
+				"example_transcription": "tɨjj, ama, muš'š'te tenn bajas",
+				"example_definition": "вы, тем не менее, помните об этом"
+			}
+		]
+	}, {
+		"cyrillic_backwards": "эсн̄а",
+		"transcription_backwards": "esnaa",
+		"cyrillic": "а̄нсэ",
+		"transcription": "aanse",
+		"derived_cyrillic": "а̄ннэ",
+		"derived_transcription": "aanne",
+		"form_cyrillic": "",
+		"form_transcription": "",
+		"pos": "Verb",
+		"common_number": "",
+		"type": "III",
+		"type_alternation": "",
+		"definitions": ["попросить кого-что и с неопр."],
+		"examples": [{
+				"example_cyrillic": "со̄нн а̄нэсьт кнӣга эфт е̄кесь пайя",
+				"example_transcription": "soonn aanes't kɲ'iiga eft jeek'es' paja",
+				"example_definition": "он попросил книгу на один вечер"
+			}
+		]
+	}, {
+		"cyrillic_backwards": "ллакаб",
+		"transcription_backwards": "llakab",
+		"cyrillic": "бакалл",
+		"transcription": "bakall",
+		"derived_cyrillic": "бакалл",
+		"derived_transcription": "bakall",
+		"form_cyrillic": "бакал",
+		"form_transcription": "bakal",
+		"pos": "Noun",
+		"common_number": "",
+		"type": "I",
+		"type_alternation": "",
+		"definitions": ["чага (гриб-трутовик на стволе берёзы);"],
+		"examples": []
+	}, {
+		"cyrillic_backwards": "араб",
+		"transcription_backwards": "arab",
+		"cyrillic": "бара",
+		"transcription": "bara",
+		"derived_cyrillic": "бара",
+		"derived_transcription": "bara",
+		"form_cyrillic": "",
+		"form_transcription": "",
+		"pos": "",
+		"common_number": "",
+		"type": "",
+		"type_alternation": "",
+		"definitions": ["же", "разве; ли"],
+		"examples": [{
+				"example_cyrillic": "то̄нн бара касьт лӣйекь?",
+				"example_transcription": "toonn bara kas't l'iijek'?",
+				"example_definition": "где же ты был?"
+			}, {
+				"example_cyrillic": "манҍтэ бара со̄нн адтҍ лӣ?",
+				"example_transcription": "man'te bara soonn adt l'ii?",
+				"example_definition": "какой же он тепёрь?"
+			}, {
+				"example_cyrillic": "мунн бара ва̄льтэтҍ",
+				"example_transcription": "munn bara vaal'tet",
+				"example_definition": "? меня разве возьмут?;"
+			}
+		]
+	}, {
+		"cyrillic_backwards": "этдэтллаов",
+		"transcription_backwards": "etdetllaov",
+		"cyrillic": "воаллтэдтэ",
+		"transcription": "voalltedte",
+		"derived_cyrillic": "ва̄лльтэ",
+		"derived_transcription": "vaal'l'te",
+		"form_cyrillic": "",
+		"form_transcription": "",
+		"pos": "Verb",
+		"common_number": "",
+		"type": "I",
+		"type_alternation": "1*",
+		"definitions": ["браться / взяться, приниматься / приняться"],
+		"examples": []
+	}, {
+		"cyrillic_backwards": "ечтсэв",
+		"transcription_backwards": "ečtsev",
+		"cyrillic": "вэстче",
+		"transcription": "vestče",
+		"derived_cyrillic": "васстэ",
+		"derived_transcription": "vasste",
+		"form_cyrillic": "",
+		"form_transcription": "",
+		"pos": "Verb",
+		"common_number": "",
+		"type": "III",
+		"type_alternation": "",
+		"definitions": ["бить, избивать кого (постоянно; иногда, бывало)", "выбивать, выколачивать что (постоянно; иногда, бывало)"],
+		"examples": [{
+				"example_cyrillic": "со̄нн вэстэч пе̄ннэ",
+				"example_transcription": "soonn vesteč p'eenne",
+				"example_definition": "он, бывало, бил собаку"
+			}, {
+				"example_cyrillic": "со̄нн вэстач тӯльетҍ",
+				"example_transcription": "soonn vestač tuul'jet",
+				"example_definition": "он иногда выбивает шкуры"
+			}
+		]
+	}, {
+		"cyrillic_backwards": "этдечтсэв",
+		"transcription_backwards": "etdečtsev",
+		"cyrillic": "вэстчедтэ",
+		"transcription": "vestčedte",
+		"derived_cyrillic": "васстэ",
+		"derived_transcription": "vasste",
+		"form_cyrillic": "",
+		"form_transcription": "",
+		"pos": "Verb",
+		"common_number": "",
+		"type": "I",
+		"type_alternation": "1*",
+		"definitions": ["драться, бить друг друга (постоянно);"],
+		"examples": []
+	}, {
+		"cyrillic_backwards": "энчнаув",
+		"transcription_backwards": "enčnauv",
+		"cyrillic": "вуанчнэ",
+		"transcription": "vuančne",
+		"derived_cyrillic": "вуаннче",
+		"derived_transcription": "vuannče",
+		"form_cyrillic": "",
+		"form_transcription": "",
+		"pos": "Verb",
+		"common_number": "",
+		"type": "III",
+		"type_alternation": "",
+		"definitions": ["доставать, извлекать, вынимать что (откуда-л. - постоянно; иногда, бывало)", "доставать, приобретать, добывать что (постоянно; иногда, бывало);"],
+		"examples": []
+	}, {
+		"cyrillic_backwards": "экьллӯв",
+		"transcription_backwards": "ek'l'luuv",
+		"cyrillic": "вӯллькэ",
+		"transcription": "vuul'l'ke",
+		"derived_cyrillic": "вӯллькэ",
+		"derived_transcription": "vuul'l'ke",
+		"form_cyrillic": "",
+		"form_transcription": "",
+		"pos": "Verb",
+		"common_number": "",
+		"type": "II",
+		"type_alternation": "1 ",
+		"definitions": ["пойти, отправиться, направиться", "пойти, поступить", "пойти (об осадках);"],
+		"examples": [{
+				"example_cyrillic": "куэсса вӯллькэ",
+				"example_transcription": "kuessa vuul'l'ke",
+				"example_definition": "пойти в гости"
+			}, {
+				"example_cyrillic": "вӯллькэ о̄һпнуввэ",
+				"example_transcription": "vuul'l'ke oohpnuvve",
+				"example_definition": "пойти учиться"
+			}
+		]
+	}, {
+		"cyrillic_backwards": "ьлемми",
+		"transcription_backwards": "'le'm'mi",
+		"cyrillic": "иммель",
+		"transcription": "im'm'el'",
+		"derived_cyrillic": "иммель",
+		"derived_transcription": "im'm'el'",
+		"form_cyrillic": "",
+		"form_transcription": "",
+		"pos": "Noun",
+		"common_number": "общее число",
+		"type": "V",
+		"type_alternation": "",
+		"definitions": ["бог"],
+		"examples": [{
+				"example_cyrillic": "иммель лоаннҍт",
+				"example_transcription": "im'm'el' loan'n't",
+				"example_definition": "зоол. оляпка (букв. божья птичка; по саамским поверьям эта птичка принесла богу травинку, с которой пошла земля)"
+			}
+		]
+	}, {
+		"cyrillic_backwards": "ӭтһ̄ак",
+		"transcription_backwards": "ethaak",
+		"cyrillic": "ка̄һтӭ",
+		"transcription": "kaahte",
+		"derived_cyrillic": "ка̄һтӭ",
+		"derived_transcription": "kaahte",
+		"form_cyrillic": "",
+		"form_transcription": "",
+		"pos": "Verb",
+		"common_number": "",
+		"type": "I",
+		"type_alternation": "4 ",
+		"definitions": ["закрывать / закрыть кого-что"],
+		"examples": [{
+				"example_cyrillic": "кӣмьн ка̄һтӭ",
+				"example_transcription": "k'iim'n kaahte",
+				"example_definition": "закрыть котёл"
+			}, {
+				"example_cyrillic": "ка̄һтӭ чильмэтҍ",
+				"example_transcription": "kaahte čil'met",
+				"example_definition": "закрыть глаза"
+			}, {
+				"example_cyrillic": "ка̄һтэ пэ̄ҏҏьтэ па̄ррнэтҍ",
+				"example_transcription": "kaahte peer̥'r̥'te paarrnet",
+				"example_definition": "запереть детей в комнате;"
+			}
+		]
+	}, {
+		"cyrillic_backwards": "ечтаок",
+		"transcription_backwards": "ečtaok",
+		"cyrillic": "коатче",
+		"transcription": "koatče",
+		"derived_cyrillic": "ка̄һтӭ",
+		"derived_transcription": "kaahte",
+		"form_cyrillic": "",
+		"form_transcription": "",
+		"pos": "Verb",
+		"common_number": "",
+		"type": "III",
+		"type_alternation": "",
+		"definitions": ["закрывать, запирать кого-что (постоянно; иногда, бывало)", "накрывать, покрывать кого-что чем (постоянно; иногда,  бывало)"],
+		"examples": [{
+				"example_cyrillic": "ель коатэч па̄ррнэтҍ",
+				"example_transcription": "jel' koateč paarrnet",
+				"example_definition": "не запирай детей"
+			}, {
+				"example_cyrillic": "коатче соан тӯльенҍ",
+				"example_transcription": "koatče soan tuul'jen'",
+				"example_definition": "покрывать нарту шкурой"
+			}
+		]
+	}, {
+		"cyrillic_backwards": "̄ек",
+		"transcription_backwards": "ee'k",
+		"cyrillic": "ке̄",
+		"transcription": "k'ee",
+		"derived_cyrillic": "ке̄",
+		"derived_transcription": "k'ee",
+		"form_cyrillic": "ке̄гк",
+		"form_transcription": "k'eegk",
+		"pos": "",
+		"common_number": "",
+		"type": "",
+		"type_alternation": "",
+		"definitions": ["кто"],
+		"examples": [{
+				"example_cyrillic": "ке̄ лӣ тамьпе? / ке̄гк ле̄в тамьпе",
+				"example_transcription": "k'ee l'ii tam'p'e? / k'eegk l'eev tam'p'e",
+				"example_definition": "? кто там?"
+			}, {
+				"example_cyrillic": "ке̄ вя̄л элля? / ке̄гк вя̄л е̄вла",
+				"example_transcription": "k'ee v'aal el'l'a? / k'eegk v'aal jeevla",
+				"example_definition": "? кого ещё нет?"
+			}, {
+				"example_cyrillic": "ке̄нн ке̄йт то̄нн уйнэкь тамьпе",
+				"example_transcription": "k'eenn k'eejt toonn ujnek' tam'p'e",
+				"example_definition": "? кого ты там видел?"
+			}, {
+				"example_cyrillic": "ке̄нн баяс юррьтбэдтӭ",
+				"example_transcription": "k'eenn bajas jur'r'tbedte",
+				"example_definition": "? кого вы имеете в виду?"
+			}, {
+				"example_cyrillic": "ке̄з вӯлкхэ кырьетҍ",
+				"example_transcription": "k'eez vuulkxe kɨr'jet",
+				"example_definition": "? кому послать письма?"
+			}, {
+				"example_cyrillic": "ке̄йн ча̄рэсьт вуэртак вулкхэз",
+				"example_transcription": "k'eejn čaares't vuertak vulkxez",
+				"example_definition": "с кем ты ждёшь посылку из тундры?"
+			}, {
+				"example_cyrillic": "ке̄йн Тыйй са̄ррнбэдтӭ",
+				"example_transcription": "k'eejn tɨjj saarrnbedte",
+				"example_definition": "? с кем Вы разговариваете?"
+			}, {
+				"example_cyrillic": "ке̄нн баяс Тыйй кырьйхэтҍ",
+				"example_transcription": "k'eenn bajas tɨjj kɨr'jxet",
+				"example_definition": "? о ком Вы написали?"
+			}, {
+				"example_cyrillic": "ке̄ е̄ннэ са̄ррн, тэдт е̄ннэ ке̄лсалл",
+				"example_transcription": "k'ee jeenne saarrn, tedt jeenne k'eelsall",
+				"example_definition": "посл. кто много говорит, тот много лжёт (у саамов многословие не в почёте)"
+			}, {
+				"example_cyrillic": "ке̄ е̄нӭсь, ажесь ныллашт, тэдт шэ ля̄ннч ӣджесь",
+				"example_transcription": "k'ee jeen'es', až'es' nɨllašt, tedt še l'aannč iidž'es'",
+				"example_definition": "посл. кто мать, отца обижает, тому на долю то же выпадает"
+			}, {
+				"example_cyrillic": "ке̄ касьт шэнтэ, тэдт тамьпе я бэдҍсувэ",
+				"example_transcription": "k'ee kas't šente, tedt tam'p'e ja bedsuve",
+				"example_definition": "посл. кто где родился, тот там и пригодился (букв. нужен)"
+			}, {
+				"example_cyrillic": "ке̄ ке̄сся вӯӈкэнҍ шыле, тэдт та̄лльва ня̄ллк",
+				"example_transcription": "k'ee k'ees's'a vuuŋken' šɨl'e, tedt taal'l'va ɲ'aallk",
+				"example_definition": "посл. кто летом на удочку ловил, тот зимой голодает"
+			}, {
+				"example_cyrillic": "ке̄ кӯффсэнҍ оалкаһт, тэдт пасьтмэнҍ луэппт",
+				"example_transcription": "k'ee kuuffsen' oalkaht, tedt pas'tmen' lueppt",
+				"example_definition": "посл. кто с зарёй начинает, тот с ложкой завершает"
+			}, {
+				"example_cyrillic": "ке̄ маӈӈедҍ пуадт, тэдт пӯййтэсь альн оарр",
+				"example_transcription": "k'ee maŋ'ŋ'ed puadt, tedt puujjtes' al'n oarr",
+				"example_definition": "посл. кто поздно приходит, тот посидит на собственном жире; позднему гостю кости"
+			}, {
+				"example_cyrillic": "ке̄ палл пӣввсуввмэнҍ, тэдт ӣджесь нимэ̄нн эйй вуанч",
+				"example_transcription": "k'ee pall p'iivvsuvvmen', tedt iidž'es' ɲ'imeenn ejj vuanč",
+				"example_definition": "посл. кто боится вспотеть, тот ничего не добьётся"
+			}, {
+				"example_cyrillic": "ке̄ пӯрь вуаллкталл, тэдт ка̄ввн нюэзь",
+				"example_transcription": "k'ee puur' vuallktall, tedt kaavvn ɲ'uez'",
+				"example_definition": "посл. кто добро отвергает, тот находит только зло"
+			}, {
+				"example_cyrillic": "ке̄ шоабашт вуэдтӭм сай, тэз роаввэнҍ лушш ва̄йвашвудт",
+				"example_transcription": "k'ee šoabašt vuedtem saj, tez roavven' lušš vaajvašvudt",
+				"example_definition": "посл. кто любит постель (т. е. спать), тому одеялом служит бедность"
+			}
+		]
+	}, {
+		"cyrillic_backwards": "энкррӣк",
+		"transcription_backwards": "enkrrii'k",
+		"cyrillic": "кӣрркнэ",
+		"transcription": "k'iirrkne",
+		"derived_cyrillic": "кӣрркнэ",
+		"derived_transcription": "k'iirrkne",
+		"form_cyrillic": "",
+		"form_transcription": "",
+		"pos": "Verb",
+		"common_number": "",
+		"type": "III",
+		"type_alternation": "",
+		"definitions": ["быть (стать) готовым", "с неопр. успеть;"],
+		"examples": [{
+				"example_cyrillic": "мунн адтҍ кӣрркна",
+				"example_transcription": "munn adt k'iirrkna",
+				"example_definition": "я сейчас буду готова"
+			}, {
+				"example_cyrillic": "то̄н пуэдтҍмэ вя̄рр кӣрркан",
+				"example_transcription": "toon puedtme v'aarr k'iirrkan",
+				"example_definition": "к твоему приходу обед будет готов"
+			}
+		]
+	}, {
+		"cyrillic_backwards": "эвййаук",
+		"transcription_backwards": "evjjauk",
+		"cyrillic": "куаййвэ",
+		"transcription": "kuajjve",
+		"derived_cyrillic": "куаййв",
+		"derived_transcription": "kuajjv",
+		"form_cyrillic": "",
+		"form_transcription": "",
+		"pos": "Verb",
+		"common_number": "",
+		"type": "II",
+		"type_alternation": "3 ",
+		"definitions": ["копать, рыть, разгребать что", "черпать, вычерпывать что; разливать что;"],
+		"examples": [{
+				"example_cyrillic": "куаййвэ е̄ммьне",
+				"example_transcription": "kuajjve jeem'm'ɲ'e",
+				"example_definition": "копать землю"
+			}, {
+				"example_cyrillic": "куаййвэ коабь",
+				"example_transcription": "kuajjve koab'",
+				"example_definition": "рыть яму"
+			}, {
+				"example_cyrillic": "куаййвэ вэ̄з куайвэнҍ",
+				"example_transcription": "kuajjve veez kuajven'",
+				"example_definition": "разгребать снег лопатой"
+			}, {
+				"example_cyrillic": "пӯдзэ куаййвэв вэ̄з кэнцэгуэйм",
+				"example_transcription": "puuʒe kuajjvev veez kenceguejm",
+				"example_definition": "олени разгребают снег копытами"
+			}
+		]
+	}, {
+		"cyrillic_backwards": "тһӯк",
+		"transcription_backwards": "thuuk",
+		"cyrillic": "кӯһт",
+		"transcription": "kuuht",
+		"derived_cyrillic": "кӯһт",
+		"derived_transcription": "kuuht",
+		"form_cyrillic": "",
+		"form_transcription": "",
+		"pos": "",
+		"common_number": "",
+		"type": "",
+		"type_alternation": "",
+		"definitions": ["два", "([b]кӯдтҍ [/b]мн.) I двойка"],
+		"examples": [{
+				"example_cyrillic": "со̄нн я̄лл кудтҍ ла̄фькэсьт мӣнэнҍ",
+				"example_transcription": "soonn jaall kudt laaf'kes't m'iinen'",
+				"example_definition": "он живёт от нас в двух шагах"
+			}, {
+				"example_cyrillic": "кӯһт чӯдҍ",
+				"example_transcription": "kuuht čuud",
+				"example_definition": "двести"
+			}, {
+				"example_cyrillic": "кӯһт тоафант",
+				"example_transcription": "kuuht toafant",
+				"example_definition": "две тысячи"
+			}, {
+				"example_cyrillic": "кӯһт мӣллвэсь а̄кь оаҏҏтэдтмэнҍ ка̄нҍц ка̄нҍцэсь тэффкэв, а мӣлхэмэсь - рыһчев",
+				"example_transcription": "kuuht m'iillves' aak' oar̥r̥tedtmen' kaan'c kaan'ces' teffkev, a m'iilxemes' - rɨhčev",
+				"example_definition": "посл. две умные женщины, ссорясь, недостатки друг друга прикрывают, две дуры - раскрывают"
+			}, {
+				"example_cyrillic": "кӯһт та̄л эфт вуадэсьт ев вуэй е̄лле",
+				"example_transcription": "kuuht taal eft vuades't jev vuej jeel'l'e",
+				"example_definition": "посл. два медведя в одной берлоге не уживутся"
+			}, {
+				"example_cyrillic": "кӯһт элля аннтма",
+				"example_transcription": "kuuht el'l'a anntma",
+				"example_definition": "погов. двух не дано;  за двумя зайцами погонишься - ни одного не поймаешь"
+			}
+		]
+	}, {
+		"cyrillic_backwards": "еннэтсс̄ол",
+		"transcription_backwards": "e'ɲ'ɲetssool",
+		"cyrillic": "ло̄сстэнне",
+		"transcription": "loossteɲ'ɲ'e",
+		"derived_cyrillic": "ло̄ссесь",
+		"derived_transcription": "loos's'es'",
+		"form_cyrillic": "",
+		"form_transcription": "",
+		"pos": "",
+		"common_number": "",
+		"type": "",
+		"type_alternation": "",
+		"definitions": ["тяжело", "трудно, тяжело"],
+		"examples": [{
+				"example_cyrillic": "ло̄сстэнне вӯййнэ",
+				"example_transcription": "loossteɲ'ɲ'e vuujjne",
+				"example_definition": "тяжело дышать"
+			}, {
+				"example_cyrillic": "ло̄сстэнне пӯдзэ ке̄ссев во̄з",
+				"example_transcription": "loossteɲ'ɲ'e puuʒe k'ees's'ev vooz",
+				"example_definition": "олени тяжело тянут воз"
+			}, {
+				"example_cyrillic": "ло̄сстэнне лыһк ёадт",
+				"example_transcription": "loossteɲ'ɲ'e lɨhk joadt",
+				"example_definition": "трудно идёт работа"
+			}
+		]
+	}, {
+		"cyrillic_backwards": "эшыл",
+		"transcription_backwards": "ešɨl",
+		"cyrillic": "лышэ",
+		"transcription": "lɨše",
+		"derived_cyrillic": "лышэ",
+		"derived_transcription": "lɨše",
+		"form_cyrillic": "",
+		"form_transcription": "",
+		"pos": "",
+		"common_number": "",
+		"type": "",
+		"type_alternation": "",
+		"definitions": ["лишь", "лишь только; едва"],
+		"examples": [{
+				"example_cyrillic": "со̄нн лышэ еххта пӯдӭ",
+				"example_transcription": "soonn lɨše jexxta puude",
+				"example_definition": "он вернулся лишь вчера"
+			}, {
+				"example_cyrillic": "эфт вуэр лышэ",
+				"example_transcription": "eft vuer lɨše",
+				"example_definition": "всего лишь раз"
+			}, {
+				"example_cyrillic": "лышэ со̄нн пуадт, мунн тоннӭ зво̄на",
+				"example_transcription": "lɨše soonn puadt, munn ton'n'e zvoona",
+				"example_definition": "как только он придёт, я тебе позвоню"
+			}, {
+				"example_cyrillic": "лышэ суаӈэ-алльк соннӭ вуэсста",
+				"example_transcription": "lɨše suaŋe-al'l'k son'n'e vuessta",
+				"example_definition": "лишь только \\[он\\] вошёл - сын ему навстречу"
+			}, {
+				"example_cyrillic": "лышэ кыррьтэй лоаннҍт мэ̄нн-не ка̄ввн",
+				"example_transcription": "lɨše kɨr'r'tej loan'n't meenn-ɲ'e kaavvn",
+				"example_definition": "посл. только летающая птица что-нибудь найдёт; под лежачий камень вода не течёт"
+			}, {
+				"example_cyrillic": "лышэ тэдт эйй тӣдҍ, манҍтэ ло̄ссэ лӣ лыһк, ке̄ никуэсь эйй лыһкма",
+				"example_transcription": "lɨše tedt ejj t'iid, man'te loosse l'ii lɨhk, k'ee ɲ'ikues' ejj lɨhkma",
+				"example_definition": "посл. тот не знает, как тяжёл труд, кто \\[сам\\] никогда не трудился"
+			}
+		]
+	}, {
+		"cyrillic_backwards": "этҍнам",
+		"transcription_backwards": "et'nam",
+		"cyrillic": "манҍтэ",
+		"transcription": "man'te",
+		"derived_cyrillic": "манҍтэ",
+		"derived_transcription": "man'te",
+		"form_cyrillic": "",
+		"form_transcription": "",
+		"pos": "",
+		"common_number": "",
+		"type": "",
+		"type_alternation": "",
+		"definitions": ["какой"],
+		"examples": [{
+				"example_cyrillic": "манҍтэ ла̄влэтҍ то̄нн шоабшак",
+				"example_transcription": "man'te laavlet toonn šoabšak",
+				"example_definition": "? какие песни ты любишь?"
+			}, {
+				"example_cyrillic": "манҍтэ та̄рьм лӣ пе̄ййв",
+				"example_transcription": "man'te taar'm l'ii p'eejjv",
+				"example_definition": "? какой сегодня день?"
+			}, {
+				"example_cyrillic": "эмм тӣдҍ, манҍтэ кнӣга мыннӭ ва̄лльтэ",
+				"example_transcription": "emm t'iid, man'te kɲ'iiga mɨn'n'e vaal'l'te",
+				"example_definition": "не знаю, какую книгу мне взять"
+			}, {
+				"example_cyrillic": "манҍтэ шӣг е̄ррк лӣ",
+				"example_transcription": "man'te š'iig jeerrk l'ii",
+				"example_definition": "! какая чудесная погода!"
+			}, {
+				"example_cyrillic": "манҍтэ ле̄в вуаннтас, мугка шэ ле̄в ла̄дҍв",
+				"example_transcription": "man'te l'eev vuanntas, mugka še l'eev laadv",
+				"example_definition": "посл. каковы корни, такова и вершина; каковы сами, таковы и сани"
+			}, {
+				"example_cyrillic": "манҍтэ лӣ е̄ннҍ, мугка\tшэ лӣ нӣййт",
+				"example_transcription": "man'te l'ii jeen'n', mugka\tše l'ii ɲ'iijjt",
+				"example_definition": "посл. какова мать такова и дочь"
+			}
+		]
+	}, {
+		"cyrillic_backwards": "этьссадьрр̄ем",
+		"transcription_backwards": "et's'sad'r'ree'm",
+		"cyrillic": "ме̄ррьдассьтэ",
+		"transcription": "m'eer'r'das's'te",
+		"derived_cyrillic": "ме̄ррь",
+		"derived_transcription": "m'eer'r'",
+		"form_cyrillic": "",
+		"form_transcription": "",
+		"pos": "Verb",
+		"common_number": "",
+		"type": "II",
+		"type_alternation": "4*",
+		"definitions": ["измерить что; отмерить что, чего (быстро)", "померить, примерить что (быстро)"],
+		"examples": [{
+				"example_cyrillic": "ме̄ррьдассьтэ ко̄ллм ме̄трэ та̄вьрэдтӭ",
+				"example_transcription": "m'eer'r'das's'te koollm m'eetre taav'redte",
+				"example_definition": "отмерить три метра ткани"
+			}, {
+				"example_cyrillic": "ме̄ррьдасьт пла̄тья",
+				"example_transcription": "m'eer'r'das't plaat'ja",
+				"example_definition": "примерь платье"
+			}
+		]
+	}, {
+		"cyrillic_backwards": "ӣм",
+		"transcription_backwards": "ii'm",
+		"cyrillic": "мӣ",
+		"transcription": "m'ii",
+		"derived_cyrillic": "мӣ",
+		"derived_transcription": "m'ii",
+		"form_cyrillic": "мэ̄гк",
+		"form_transcription": "meegk",
+		"pos": "",
+		"common_number": "",
+		"type": "",
+		"type_alternation": "",
+		"definitions": ["что?"],
+		"examples": [{
+				"example_cyrillic": "мӣ лӣ туэль альн? - Карндашш лӣ",
+				"example_transcription": "m'ii l'ii tuel' al'n? - karndašš l'ii",
+				"example_definition": "что на столе? - Карандаш"
+			}, {
+				"example_cyrillic": "мэ̄гк ле̄в туэль альн? - Карндаж ле̄в",
+				"example_transcription": "meegk l'eev tuel' al'n? - karndaž l'eev",
+				"example_definition": "что на столе? - Карандаши"
+			}, {
+				"example_cyrillic": "мӣ шэнтэ",
+				"example_transcription": "m'ii šente",
+				"example_definition": "? что случилось?"
+			}, {
+				"example_cyrillic": "мэ̄нн со̄нн са̄ррн",
+				"example_transcription": "meenn soonn saarrn",
+				"example_definition": "? что он говорит?"
+			}, {
+				"example_cyrillic": "мэ̄з тыйй оасскбэдтӭ",
+				"example_transcription": "meez tɨjj oasskbedte",
+				"example_definition": "? чему вы верите?"
+			}, {
+				"example_cyrillic": "мэ̄йн аллькэпь поҏтэ кӯссетҍ",
+				"example_transcription": "meejn al'l'kep' por̥te kuus's'et",
+				"example_definition": "? чем будем кормить гостей?"
+			}, {
+				"example_cyrillic": "мэ̄нн баяс со̄нн эйй ця̄ӆӆкма",
+				"example_transcription": "meenn bajas soonn ejj c'aal̥l̥kma",
+				"example_definition": "? о чём он не сказал?"
+			}, {
+				"example_cyrillic": "мӣ о̄ллмэтҍ пӯдӭ",
+				"example_transcription": "m'ii oollmet puude",
+				"example_definition": "? что за человек пришёл?"
+			}, {
+				"example_cyrillic": "мэ̄йт со̄нн те̄лльнэ ря̄гк",
+				"example_transcription": "meejt soonn t'eel'l'ne r'aagk",
+				"example_definition": "? что (почему) он так кричит?"
+			}, {
+				"example_cyrillic": "мӣ вэххтэнне пуэллай, тэдт вэххтэнне чуаццк",
+				"example_transcription": "m'ii vexxteɲ'ɲ'e puellaj, tedt vexxteɲ'ɲ'e čuacck",
+				"example_definition": "посл. что быстро загорается, то быстро гаснет (о чувствах, настроениях и т. п.)"
+			}, {
+				"example_cyrillic": "мӣ олкэс ня̄льмэсьт вэллей, тэдт руэптэ эйй пуэдҍ",
+				"example_transcription": "m'ii olkes ɲ'aal'mes't vel'l'ej, tedt ruepte ejj pued",
+				"example_definition": "посл. что изо рта вылетело, то назад не вернётся; слово не воробей, вылетит - не поймаешь"
+			}, {
+				"example_cyrillic": "мэ̄нн мудтмэтҍ та̄так, тэ̄дт ӣджьсант шэ пуадт",
+				"example_transcription": "meenn mudtmet taatak, teedt iidž'sant še puadt",
+				"example_definition": "посл. что другим желаешь, то к тебе же и вернётся; не рой яму другому, сам в неё попадёшь"
+			}, {
+				"example_cyrillic": "мэ̄нн пе̄льй эйй ва̄льт - вуэсстал пэдт",
+				"example_transcription": "meenn p'eelij ejj vaal't - vuesstal pedt",
+				"example_definition": "посл. ухо не слышит - отвечает зад (т. е. несёт наказание)"
+			}
+		]
+	}, {
+		"cyrillic_backwards": "этьллӣм",
+		"transcription_backwards": "et'l'lii'm",
+		"cyrillic": "мӣлльтэ",
+		"transcription": "m'iil'l'te",
+		"derived_cyrillic": "мӣлльтэ",
+		"derived_transcription": "m'iil'l'te",
+		"form_cyrillic": "",
+		"form_transcription": "",
+		"pos": "",
+		"common_number": "",
+		"type": "",
+		"type_alternation": "",
+		"definitions": ["с кем-чем", "за кем-чем", "по кому-чему", "вдоль чего", "позади, сзади, следом"],
+		"examples": [{
+				"example_cyrillic": "мунн ва̄лта со̄н мӣлльтэ",
+				"example_transcription": "munn vaalta soon m'iil'l'te",
+				"example_definition": "я возьму его с собой"
+			}, {
+				"example_cyrillic": "тэнна картина мӣлльтэ рисэваййма лӣ",
+				"example_transcription": "tenna kart'ina m'iil'l'te r'isevajjma l'ii",
+				"example_definition": "срисовано с этой картины"
+			}, {
+				"example_cyrillic": "мӣлльтан",
+				"example_transcription": "m'iil'l'tan",
+				"example_definition": "с собой (я)"
+			}, {
+				"example_cyrillic": "мунн то̄нн ва̄лта мӣлльтан",
+				"example_transcription": "munn toonn vaalta m'iil'l'tan",
+				"example_definition": "я возьму тебя с собой"
+			}, {
+				"example_cyrillic": "мӣлльтант",
+				"example_transcription": "m'iil'l'tant",
+				"example_definition": "с собой (ты)"
+			}, {
+				"example_cyrillic": "ва̄льт со̄н мӣлльтант",
+				"example_transcription": "vaal't soon m'iil'l'tant",
+				"example_definition": "возьми его с собой"
+			}, {
+				"example_cyrillic": "мӣлльтэсь",
+				"example_transcription": "m'iil'l'tes'",
+				"example_definition": "с собой (он, она)"
+			}, {
+				"example_cyrillic": "со̄нн ва̄ллт то̄н мӣлльтэсь",
+				"example_transcription": "soonn vaallt toon m'iil'l'tes'",
+				"example_definition": "он возьмёт тебя с собой"
+			}, {
+				"example_cyrillic": "пӯдзэ мӣлльтэ ва̄ннҍцэ",
+				"example_transcription": "puuʒe m'iil'l'te vaan'n'ce",
+				"example_definition": "идти за оленями (вслед)"
+			}, {
+				"example_cyrillic": "со̄н юрртэ мӣлльтэ мэ̄ннэ",
+				"example_transcription": "soon jurrte m'iil'l'te meenne",
+				"example_definition": "следить за ею мыслью"
+			}, {
+				"example_cyrillic": "ло̄гкэ кнӣга кнӣга мӣлльтэ",
+				"example_transcription": "loogke kɲ'iiga kɲ'iiga m'iil'l'te",
+				"example_definition": "читать книгу за книгой"
+			}, {
+				"example_cyrillic": "мэ̄ннэв ыгь ыге мӣлльтэ",
+				"example_transcription": "meennev ɨg' ɨg'e m'iil'l'te",
+				"example_definition": "идёт год за годом"
+			}, {
+				"example_cyrillic": "выйе чӯһкас мӣлльтэ",
+				"example_transcription": "vɨje čuuhkas m'iil'l'te",
+				"example_definition": "ехать по дороге"
+			}, {
+				"example_cyrillic": "кэ̄ллье то̄ммтсэ мӣлльтэ",
+				"example_transcription": "keel'l'je toommtse m'iil'l'te",
+				"example_definition": "ходить по знакомым"
+			}, {
+				"example_cyrillic": "ва̄ннҍцэ ноавьтэ кӣйе мӣлльтэ",
+				"example_transcription": "vaan'n'ce noav'te k'iije m'iil'l'te",
+				"example_definition": "идти по следам зверя"
+			}, {
+				"example_cyrillic": "лыһкэ пла̄н мӣлльтэ",
+				"example_transcription": "lɨhke plaan m'iil'l'te",
+				"example_definition": "работать по плану"
+			}, {
+				"example_cyrillic": "тыввнэдтэ маӈьмусс оаз на̄ль мӣлльтэ",
+				"example_transcription": "tɨvvnedte maŋ'muss oaz naal' m'iil'l'te",
+				"example_definition": "одеваться по последней моде"
+			}, {
+				"example_cyrillic": "ӣнцка мӣлльтэ воанцче",
+				"example_transcription": "iincka m'iil'l'te voancče",
+				"example_definition": "прогуливаться по утрам"
+			}, {
+				"example_cyrillic": "ва̄ннҍцэ рынт мӣлльтэ",
+				"example_transcription": "vaan'n'ce rɨnt m'iil'l'te",
+				"example_definition": "идти вдоль берега"
+			}, {
+				"example_cyrillic": "кэжь мӣлльтэ",
+				"example_transcription": "kež' m'iil'l'te",
+				"example_definition": "вдоль (от начала до конца) чего"
+			}, {
+				"example_cyrillic": "кэжь мӣлльтэ ёг, я̄вьр",
+				"example_transcription": "kež' m'iil'l'te jog, jaav'r",
+				"example_definition": "вдоль реки, озера"
+			}, {
+				"example_cyrillic": "кэжь мӣлльтэ туэль",
+				"example_transcription": "kež' m'iil'l'te tuel'",
+				"example_definition": "вдоль стола"
+			}, {
+				"example_cyrillic": "кэжь мӣлльтэ роаӈьк",
+				"example_transcription": "kež' m'iil'l'te roaŋ'k",
+				"example_definition": "вдоль туловища"
+			}, {
+				"example_cyrillic": "а̄ка ва̄ннц авьтэмь пе̄льт, ка̄ллса ва̄ннц мӣлльтэ",
+				"example_transcription": "aaka vaannc av'tem' p'eel't, kaallsa vaannc m'iil'l'te",
+				"example_definition": "бабушка идёт впереди, дедушка идёт следом"
+			}
+		]
+	}, {
+		"cyrillic_backwards": "ннум",
+		"transcription_backwards": "nnum",
+		"cyrillic": "мунн",
+		"transcription": "munn",
+		"derived_cyrillic": "мунн",
+		"derived_transcription": "munn",
+		"form_cyrillic": "",
+		"form_transcription": "",
+		"pos": "",
+		"common_number": "",
+		"type": "",
+		"type_alternation": "",
+		"definitions": ["я"],
+		"examples": [{
+				"example_cyrillic": "мунн то̄н вуэрта",
+				"example_transcription": "munn toon vuerta",
+				"example_definition": "я жду тебя"
+			}, {
+				"example_cyrillic": "пугк мун тамьпе тӣдтӭв",
+				"example_transcription": "pugk mun tam'p'e t'iidtev",
+				"example_definition": "меня там все знают"
+			}, {
+				"example_cyrillic": "мыннӭ элля мэ̄нн тоннӭ це̄ӆӆькэ",
+				"example_transcription": "mɨn'n'e el'l'a meenn ton'n'e c'eel̥'l̥'ke",
+				"example_definition": "мне нечего тебе сказать"
+			}, {
+				"example_cyrillic": "мыннӭ та̄рьм эйй вуэйсадтҍ",
+				"example_transcription": "mɨn'n'e taar'm ejj vuejsadt",
+				"example_definition": "мне сегодня нездоровится"
+			}, {
+				"example_cyrillic": "ель са̄рн мунэнҍ",
+				"example_transcription": "jel' saarn munen'",
+				"example_definition": "не разговаривай со мной"
+			}, {
+				"example_cyrillic": "ёадтӭ мунха",
+				"example_transcription": "joadte munxa",
+				"example_definition": "поезжайте без меня"
+			}, {
+				"example_cyrillic": "мун баяс елле пя̄дцлушшэ",
+				"example_transcription": "mun bajas jel'l'e p'aadclušše",
+				"example_definition": "обо мне не беспокойтесь"
+			}, {
+				"example_cyrillic": "мун ля̄ тӯллтма е̄ннэ лӣмэнҍ",
+				"example_transcription": "mun l'aa tuulltma jeenne l'iimen'",
+				"example_definition": "посл. я сварен во многих бульонах; пройти сквозь огонь, воду и медные трубы"
+			}, {
+				"example_cyrillic": "мунн пӣльетҍ эмм вя̄ллктэл",
+				"example_transcription": "munn p'iil'jet emm v'aallktel",
+				"example_definition": "я свои уши не одалживаю (т. е. мои уши закрыты для сплетен)"
+			}, {
+				"example_cyrillic": "мунн эмм ля̄ кӯлль, ко̄н то̄нн ся̄пптэлак",
+				"example_transcription": "munn emm l'aa kuul'l', koon toonn s'aapptelak",
+				"example_definition": "посл. я не рыба, которую ты используешь в качестве наживки"
+			}, {
+				"example_cyrillic": "мунэсьт элля нюэммель кӯттҍк",
+				"example_transcription": "munes't el'l'a ɲ'uem'm'el' kuuttk",
+				"example_definition": "посл. у меня не заячье сердце (т. е. я не трус)"
+			}
+		]
+	}, {
+		"cyrillic_backwards": "ррым",
+		"transcription_backwards": "rrɨm",
+		"cyrillic": "мырр",
+		"transcription": "mɨrr",
+		"derived_cyrillic": "мырр",
+		"derived_transcription": "mɨrr",
+		"form_cyrillic": "мыр",
+		"form_transcription": "mɨr",
+		"pos": "Noun",
+		"common_number": "",
+		"type": "I",
+		"type_alternation": "",
+		"definitions": ["мир, вселённая", "мир, среда, народ"],
+		"examples": [{
+				"example_cyrillic": "мыр шэ̄ннтмушш",
+				"example_transcription": "mɨr šeenntmušš",
+				"example_definition": "происхождение мира"
+			}, {
+				"example_cyrillic": "пугк мыр мунн пырс ёдтӭ",
+				"example_transcription": "pugk mɨr munn pɨrs jodte",
+				"example_definition": "всю-то я вселенную проехал (из песни)"
+			}, {
+				"example_cyrillic": "мырр туарр",
+				"example_transcription": "mɨrr tuarr",
+				"example_definition": "мировая война"
+			}, {
+				"example_cyrillic": "капиталистическэ мырр",
+				"example_transcription": "kap'ital'ist'ičeske mɨrr",
+				"example_definition": "капиталистический мир"
+			}, {
+				"example_cyrillic": "социализм мырр",
+				"example_transcription": "soc'ial'izm mɨrr",
+				"example_definition": "мир социализма"
+			}, {
+				"example_cyrillic": "те̄д тӣдтӭй мырр",
+				"example_transcription": "t'eed t'iidtej mɨrr",
+				"example_definition": "научный мир"
+			}, {
+				"example_cyrillic": "о̄ммп мырэнҍ выййтэ",
+				"example_transcription": "oommp mɨren' vɨjjte",
+				"example_definition": "выйти всем миром"
+			}, {
+				"example_cyrillic": "мыр эвтэсьт я соаррьм лӣ мо̄дже",
+				"example_transcription": "mɨr evtes't ja soar'r'm l'ii moodž'e",
+				"example_definition": "погов. на миру и смерть красна"
+			}, {
+				"example_cyrillic": "мырр ня̄льм эгк тэбп",
+				"example_transcription": "mɨrr ɲ'aal'm egk tebp",
+				"example_definition": "посл. всем рот не заткнёшь; на чужой роток не накинешь платок"
+			}
+		]
+	}, {
+		"cyrillic_backwards": "ррым",
+		"transcription_backwards": "rrɨm",
+		"cyrillic": "мырр",
+		"transcription": "mɨrr",
+		"derived_cyrillic": "мырр",
+		"derived_transcription": "mɨrr",
+		"form_cyrillic": "мыр",
+		"form_transcription": "mɨr",
+		"pos": "Noun",
+		"common_number": "",
+		"type": "I",
+		"type_alternation": "",
+		"definitions": ["мир, спокойствие, согласие"],
+		"examples": [{
+				"example_cyrillic": "мырэсьт е̄лле",
+				"example_transcription": "mɨres't jeel'l'e",
+				"example_definition": "жить в мире"
+			}, {
+				"example_cyrillic": "нарэдэтҍ туарр мыр гуэйкэ",
+				"example_transcription": "naredet tuarr mɨr guejke",
+				"example_definition": "борьба народов за мир"
+			}, {
+				"example_cyrillic": "мырр пя̄ллшэетҍ ёадтмушш",
+				"example_transcription": "mɨrr p'aallšejet joadtmušš",
+				"example_definition": "движение сторонников мира"
+			}, {
+				"example_cyrillic": "мырэсьт я̄ллмушш",
+				"example_transcription": "mɨres't jaallmušš",
+				"example_definition": "мирное сосуществование"
+			}, {
+				"example_cyrillic": "мырр политика",
+				"example_transcription": "mɨrr pol'it'ika",
+				"example_definition": "мирная политика"
+			}, {
+				"example_cyrillic": "мырр соаррндэдтмушш",
+				"example_transcription": "mɨrr soarrndedtmušš",
+				"example_definition": "мирный договор"
+			}, {
+				"example_cyrillic": "пӣррсэсьт лӣ тӣввт мырр",
+				"example_transcription": "p'iirrses't l'ii t'iivvt mɨrr",
+				"example_definition": "в семье царит согласие"
+			}
+		]
+	}, {
+		"cyrillic_backwards": "̄екин",
+		"transcription_backwards": "ee'ki'ɲ",
+		"cyrillic": "нике̄",
+		"transcription": "ɲ'ik'ee",
+		"derived_cyrillic": "нике̄",
+		"derived_transcription": "ɲ'ik'ee",
+		"form_cyrillic": "нике̄гк",
+		"form_transcription": "ɲ'ik'eegk",
+		"pos": "",
+		"common_number": "",
+		"type": "",
+		"type_alternation": "",
+		"definitions": ["никто"],
+		"examples": [{
+				"example_cyrillic": "нике̄ эйй та̄т ёадтӭ, нике̄гк ев та̄т ёадтӭ",
+				"example_transcription": "ɲ'ik'ee ejj taat joadte, ɲ'ik'eegk jev taat joadte",
+				"example_definition": "никто не хочет ехать"
+			}, {
+				"example_cyrillic": "мунн нике̄нн эмм э̄сстма",
+				"example_transcription": "munn ɲ'ik'eenn emm eesstma",
+				"example_definition": "я никого не застал"
+			}, {
+				"example_cyrillic": "мунн нике̄йн тэста эмм ля̄ томтас",
+				"example_transcription": "munn ɲ'ik'eejn testa emm l'aa tomtas",
+				"example_definition": "я ни с кем здесь не знаком"
+			}, {
+				"example_cyrillic": "елле пя̄дцлушшэ нике̄нн баяс",
+				"example_transcription": "jel'l'e p'aadclušše ɲ'ik'eenn bajas",
+				"example_definition": "не беспокойтесь ни о ком"
+			}, {
+				"example_cyrillic": "нике̄ оаккшэнҍ кӣдесьт эйй шэ̄нт",
+				"example_transcription": "ɲ'ik'ee oakkšen' k'iid'es't ejj šeent",
+				"example_definition": "посл. мастером с топором в руке никто не рождается"
+			}, {
+				"example_cyrillic": "нике̄ эйй вуэй пе̄јјтэ то̄л лӣбпэ вуэла лӣбпэтҍ пуэльтханна",
+				"example_transcription": "ɲ'ik'ee ejj vuej p'eeјјte tool l'iibpe vuela l'iibpet puel'txanna",
+				"example_definition": "посл. никто не сможет спрятать огонь под подолом, не спалив его; шила в мешке не утаишь"
+			}, {
+				"example_cyrillic": "нике̄ эйй ка̄цьк ӣжесь це̄п",
+				"example_transcription": "ɲ'ik'ee ejj kaac'k iiž'es' c'eep",
+				"example_definition": "посл. никто себя за палец кусать не будет"
+			}
+		]
+	}, {
+		"cyrillic_backwards": "эссаоп",
+		"transcription_backwards": "essaop",
+		"cyrillic": "поассэ",
+		"transcription": "poasse",
+		"derived_cyrillic": "поассэ",
+		"derived_transcription": "poasse",
+		"form_cyrillic": "",
+		"form_transcription": "",
+		"pos": "Verb",
+		"common_number": "",
+		"type": "I",
+		"type_alternation": "3 ",
+		"definitions": ["дуть на кого-что и без доп. раздувать / раздуть что", "безл. веять, нести"],
+		"examples": [{
+				"example_cyrillic": "поассэв пӣӈк",
+				"example_transcription": "poassev p'iiŋk",
+				"example_definition": "дуют ветры"
+			}, {
+				"example_cyrillic": "поассэ тӯввас э̄л",
+				"example_transcription": "poasse tuuvvas eel",
+				"example_definition": "дуть на свечу"
+			}, {
+				"example_cyrillic": "поаз то̄л",
+				"example_transcription": "poaz tool",
+				"example_definition": "раздуй огонь"
+			}, {
+				"example_cyrillic": "вӯййнсэсьт поасс чуацксэнҍ",
+				"example_transcription": "vuujjnses't poass čuacksen'",
+				"example_definition": "в воздухе веет прохладой;"
+			}
+		]
+	}, {
+		"cyrillic_backwards": "ӭтдэуп",
+		"transcription_backwards": "etdeup",
+		"cyrillic": "пуэдтӭ",
+		"transcription": "puedte",
+		"derived_cyrillic": "пуэдтӭ",
+		"derived_transcription": "puedte",
+		"form_cyrillic": "",
+		"form_transcription": "",
+		"pos": "Verb",
+		"common_number": "",
+		"type": "I",
+		"type_alternation": "5 ",
+		"definitions": ["прибыть, прийти, приехать", "прийти, наступить, настать"],
+		"examples": [{
+				"example_cyrillic": "пуэдтӭ куэсса",
+				"example_transcription": "puedte kuessa",
+				"example_definition": "прийти в гости"
+			}, {
+				"example_cyrillic": "сыйй пӯдтэнҍ моаст",
+				"example_transcription": "sɨjj puudten' moast",
+				"example_definition": "они приехали домой"
+			}, {
+				"example_cyrillic": "пуэдтӭ моаст маӈӈедҍ",
+				"example_transcription": "puedte moast maŋ'ŋ'ed",
+				"example_definition": "явиться домой поздно"
+			}, {
+				"example_cyrillic": "по̄яс пӯдӭ",
+				"example_transcription": "poojas puude",
+				"example_definition": "поезд пришел"
+			}, {
+				"example_cyrillic": "самлёһт пӯдӭ а̄йкалт",
+				"example_transcription": "saml'oht puude aajkalt",
+				"example_definition": "самолёт прибыл рано"
+			}, {
+				"example_cyrillic": "мыйе пӯдӭ кыррьй",
+				"example_transcription": "mɨje puude kɨr'r'j",
+				"example_definition": "к нам поступило письмо"
+			}, {
+				"example_cyrillic": "юррт пӯдӭ вуаййва",
+				"example_transcription": "jurrt puude vuajjva",
+				"example_definition": "перен. в голову пришла мысль"
+			}, {
+				"example_cyrillic": "кыдт пӯдӭ",
+				"example_transcription": "kɨdt puude",
+				"example_definition": "весна наступила;"
+			}
+		]
+	}, {
+		"cyrillic_backwards": "2этдаор",
+		"transcription_backwards": "2etdaor",
+		"cyrillic": "роадтэ2",
+		"transcription": "roadte2",
+		"derived_cyrillic": "роадтэ",
+		"derived_transcription": "roadte",
+		"form_cyrillic": "",
+		"form_transcription": "",
+		"pos": "Noun",
+		"common_number": "",
+		"type": "I",
+		"type_alternation": "3 ",
+		"definitions": ["рвать, вырывать, выдёргивать что, дёргать кого-что за что; полоть что"],
+		"examples": [{
+				"example_cyrillic": "роадтэ на̄вьл",
+				"example_transcription": "roadte naav'l",
+				"example_definition": "выдёргивать гвоздь"
+			}, {
+				"example_cyrillic": "роадтэ поавчса па̄нҍ",
+				"example_transcription": "roadte poavčsa paan'",
+				"example_definition": "вырывать больной"
+			}
+		]
+	}, {
+		"cyrillic_backwards": "пьммӯр",
+		"transcription_backwards": "p'm'muur",
+		"cyrillic": "рӯммьп",
+		"transcription": "ruum'm'p",
+		"derived_cyrillic": "рӯммьп",
+		"derived_transcription": "ruum'm'p",
+		"form_cyrillic": "рӯмьп",
+		"form_transcription": "ruum'p",
+		"pos": "Noun",
+		"common_number": "",
+		"type": "II",
+		"type_alternation": "2 ",
+		"definitions": ["болячка; короста", "[b]рӯммьп вуэййв жук"],
+		"examples": [{
+				"example_cyrillic": "рӯмьп моашшэ та̄лл вӯенҍ",
+				"example_transcription": "ruum'p moašše taall vuujen'",
+				"example_definition": "смазать болячку медвежьим жиром"
+			}
+		]
+	}, {
+		"cyrillic_backwards": "йэррӣс",
+		"transcription_backwards": "jerrii's",
+		"cyrillic": "сӣррэй",
+		"transcription": "s'iirrej",
+		"derived_cyrillic": "сӣрр",
+		"derived_transcription": "s'iirr",
+		"form_cyrillic": "",
+		"form_transcription": "",
+		"pos": "Noun",
+		"common_number": "общее число",
+		"type": "V",
+		"type_alternation": "",
+		"definitions": ["игрок во что, на чём"],
+		"examples": [{
+				"example_cyrillic": "шӣг сӣррэй",
+				"example_transcription": "š'iig s'iirrej",
+				"example_definition": "хороший игрок"
+			}, {
+				"example_cyrillic": "вуайхэсс (поадзма) сӣррэй",
+				"example_transcription": "vuajxess (poaʒma) s'iirrej",
+				"example_definition": "спорт. запасной игрок"
+			}, {
+				"example_cyrillic": "сӣррэй каллас лӣ сӣрэнэсь",
+				"example_transcription": "s'iirrej kallas l'ii s'iirenes'",
+				"example_definition": "посл. играющий сыт своей игрой; кто проспит, прогуляет, тот с кашевара не спрашивает"
+			}, {
+				"example_cyrillic": "сӣрръе едтҍ ля̄ па̄һкма кӯдтӭ",
+				"example_transcription": "s'iirrje jedt l'aa paahkma kuudte",
+				"example_definition": "посл. игравшему (тому, кто долго развлекался) оставлять не велено"
+			}
+		]
+	}, {
+		"cyrillic_backwards": "экг̄ат",
+		"transcription_backwards": "ekgaat",
+		"cyrillic": "та̄гкэ",
+		"transcription": "taagke",
+		"derived_cyrillic": "та̄гкэ",
+		"derived_transcription": "taagke",
+		"form_cyrillic": "",
+		"form_transcription": "",
+		"pos": "Verb",
+		"common_number": "",
+		"type": "I",
+		"type_alternation": "3 ",
+		"definitions": ["бить, ударить чем по чему"],
+		"examples": [{
+				"example_cyrillic": "та̄гкэ ве̄джьрэнҍ",
+				"example_transcription": "taagke v'eedž'ren'",
+				"example_definition": "бить молотком"
+			}, {
+				"example_cyrillic": "та̄гкэ че̄д",
+				"example_transcription": "taagke čeed",
+				"example_definition": "пробить что;"
+			}
+		]
+	}, {
+		"cyrillic_backwards": "этһ̄ат",
+		"transcription_backwards": "ethaat",
+		"cyrillic": "та̄һтэ",
+		"transcription": "taahte",
+		"derived_cyrillic": "та̄һтэ",
+		"derived_transcription": "taahte",
+		"form_cyrillic": "",
+		"form_transcription": "",
+		"pos": "Verb",
+		"common_number": "",
+		"type": "I",
+		"type_alternation": "3 ",
+		"definitions": ["хотеть, жаждать, желать чего и с неопр., мечтать о ком-чём и с неопр.", "[b]та̄та тоннӭ"],
+		"examples": [{
+				"example_cyrillic": "та̄һтэ кырьйхэ",
+				"example_transcription": "taahte kɨr'jxe",
+				"example_definition": "хотеть писать"
+			}, {
+				"example_cyrillic": "мэ̄нн то̄нн та̄так тэйн це̄ӆӆькэ?",
+				"example_transcription": "meenn toonn taatak tejn c'eel̥'l̥'ke?",
+				"example_definition": "что ты хочешь этим сказать?"
+			}, {
+				"example_cyrillic": "та̄һтэ кырьйхэ кнӣга",
+				"example_transcription": "taahte kɨr'jxe kɲ'iiga",
+				"example_definition": "мечтать написать книгу"
+			}
+		]
+	}, {
+		"cyrillic_backwards": "лл̄от",
+		"transcription_backwards": "lloot",
+		"cyrillic": "то̄лл",
+		"transcription": "tooll",
+		"derived_cyrillic": "то̄лл",
+		"derived_transcription": "tooll",
+		"form_cyrillic": "то̄л",
+		"form_transcription": "tool",
+		"pos": "Noun",
+		"common_number": "",
+		"type": "I",
+		"type_alternation": "",
+		"definitions": ["огонь м"],
+		"examples": [{
+				"example_cyrillic": "оавтчедтэ то̄лл гӯрэсьт",
+				"example_transcription": "oavtčedte tooll guures't",
+				"example_definition": "греться у огня"
+			}, {
+				"example_cyrillic": "пый то̄л",
+				"example_transcription": "pɨj tool",
+				"example_definition": "разведи костёр"
+			}, {
+				"example_cyrillic": "чальм то̄ллэнҍ пӯллев",
+				"example_transcription": "čal'm toollen' puul'l'ev",
+				"example_definition": "перен. глаза горят огнём"
+			}, {
+				"example_cyrillic": "кэскэсьт кудтҍ то̄лла",
+				"example_transcription": "keskes't kudt toolla",
+				"example_definition": "между двух огней"
+			}, {
+				"example_cyrillic": "то̄лхэм коавас лӣ гӯ ка̄лльм",
+				"example_transcription": "toolxem koavas l'ii guu kaal'l'm",
+				"example_definition": "посл. кувакса (чум) без огня как могила"
+			}, {
+				"example_cyrillic": "то̄лха эйй суввэд",
+				"example_transcription": "toolxa ejj suvved",
+				"example_definition": "посл. без огня не дымит; = нет дыма без огня"
+			}
+		]
+	}, {
+		"cyrillic_backwards": "ссэлпммут",
+		"transcription_backwards": "sselpmmut",
+		"cyrillic": "туммплэсс",
+		"transcription": "tummpless",
+		"derived_cyrillic": "туммплэсс",
+		"derived_transcription": "tummpless",
+		"form_cyrillic": "туммплэз",
+		"form_transcription": "tummplez",
+		"pos": "Noun",
+		"common_number": "",
+		"type": "I",
+		"type_alternation": "",
+		"definitions": ["даль ж; туммплэзэсьт е̄лле жить в дали"],
+		"examples": [{
+				"example_cyrillic": "туммплэссе кӣһче",
+				"example_transcription": "tummples's'e k'iihče",
+				"example_definition": "смотреть вдаль"
+			}, {
+				"example_cyrillic": "туммплэз ро̄д",
+				"example_transcription": "tummplez rood",
+				"example_definition": "дальние родственники"
+			}
+		]
+	}, {
+		"cyrillic_backwards": "этдечгаоц",
+		"transcription_backwards": "etdečgaoc",
+		"cyrillic": "цоагчедтэ",
+		"transcription": "coagčedte",
+		"derived_cyrillic": "ца̄гке",
+		"derived_transcription": "caagk'e",
+		"form_cyrillic": "",
+		"form_transcription": "",
+		"pos": "Verb",
+		"common_number": "",
+		"type": "I",
+		"type_alternation": "1*",
+		"definitions": ["заниматься примеркой чего (в данный момент)"],
+		"examples": [{
+				"example_cyrillic": "сыйй тамьпе цоагчедтэв, цоагчев то̄ҏкэтҍ",
+				"example_transcription": "sɨjj tam'p'e coagčedtev, coagčev toor̥ket",
+				"example_definition": "они там занимаются примеркой, шубы примеряют"
+			}
+		]
+	}, {
+		"cyrillic_backwards": "нн̄ач",
+		"transcription_backwards": "nnaač",
+		"cyrillic": "ча̄нн",
+		"transcription": "čaann",
+		"derived_cyrillic": "ча̄нн",
+		"derived_transcription": "čaann",
+		"form_cyrillic": "ча̄н",
+		"form_transcription": "čaan",
+		"pos": "Noun",
+		"common_number": "",
+		"type": "I",
+		"type_alternation": "2 ",
+		"definitions": ["чёрт; ср. [b]цуэҏҏьт[/b]"],
+		"examples": [{
+				"example_cyrillic": "ча̄нн лӣ тоннӭ тоавврэшш",
+				"example_transcription": "čaann l'ii ton'n'e toavvrešš",
+				"example_definition": "чёрт тебе товарищ (о человеке, который делает много зла)"
+			}, {
+				"example_cyrillic": "ча̄нэсьт вуайй поаччкэ, ӣджь ӣджьсант эгк поачк",
+				"example_transcription": "čaanes't vuajj poaččke, iidž' iidž'sant egk poačk",
+				"example_definition": "погов. от чёрта можно убежать, а от себя нет"
+			}, {
+				"example_cyrillic": "ча̄нн пыннь со̄н чӯдзэ",
+				"example_transcription": "čaann pɨɲ'ɲ' soon čuuʒe",
+				"example_definition": "погов. чёрт пасёт его стадо (о человеке, хорошо знающем местность, повадки животных, у которого не разбредается стадо; по саамским поверьям некоторым людям силы рода помогали сохранять стада)"
+			}, {
+				"example_cyrillic": "ча̄нн эйй е̄ск оаҏҏтэдтэ тэнн райя, ко̄н райя со̄нэсьт нюххчемь лӣ поаһк",
+				"example_transcription": "čaann ejj jeesk oar̥r̥tedte tenn raja, koon raja soones't ɲ'uxxčem' l'ii poahk",
+				"example_definition": "посл. чёрт не перестанет ругаться до тех пор, пока у него тёплый язык (т. е. пока жив); горбатого могила исправит"
+			}
+		]
+	}, {
+		"cyrillic_backwards": "д̄еч",
+		"transcription_backwards": "deeč",
+		"cyrillic": "че̄д",
+		"transcription": "čeed",
+		"derived_cyrillic": "че̄д",
+		"derived_transcription": "čeed",
+		"form_cyrillic": "",
+		"form_transcription": "",
+		"pos": "",
+		"common_number": "",
+		"type": "",
+		"type_alternation": "",
+		"definitions": ["насквозь", "сквозь кого-что"],
+		"examples": [{
+				"example_cyrillic": "воац че̄д лэ̄дзэнҍ",
+				"example_transcription": "voac čeed leeʒen'",
+				"example_definition": "варежки промокли насквозь"
+			}, {
+				"example_cyrillic": "че̄д ма̄лець пӣӈӈк манн",
+				"example_transcription": "čeed maal'ec' p'iiŋŋk mann",
+				"example_definition": "ветер продувает малицу насквозь"
+			}, {
+				"example_cyrillic": "по̄гктэдтэ че̄д нарэд",
+				"example_transcription": "poogktedte čeed nared",
+				"example_definition": "пробираться сквозь толпу"
+			}
+		]
+	}, {
+		"cyrillic_backwards": "экгаоч",
+		"transcription_backwards": "ekgaoč",
+		"cyrillic": "чоагкэ",
+		"transcription": "čoagke",
+		"derived_cyrillic": "чоагь",
+		"derived_transcription": "čoag'",
+		"form_cyrillic": "",
+		"form_transcription": "",
+		"pos": "Verb",
+		"common_number": "",
+		"type": "I",
+		"type_alternation": "3 ",
+		"definitions": ["чесать, расчёсывать / расчесать, причёсывать / причесать кого-что", "перен. ругать, критиковать кого"],
+		"examples": [{
+				"example_cyrillic": "чоагкэ вуэйв чоагкмэнҍ",
+				"example_transcription": "čoagke vuejv čoagkmen'",
+				"example_definition": "чесать голову гребнем"
+			}, {
+				"example_cyrillic": "чоагкэ вӯптэтҍ",
+				"example_transcription": "čoagke vuuptet",
+				"example_definition": "расчёсывать волосы"
+			}, {
+				"example_cyrillic": "чоаг",
+				"example_transcription": "čoag",
+				"example_definition": "[b]вуэррьпнант[/b] причеши сестрёнку"
+			}, {
+				"example_cyrillic": "та̄рьм со̄н шӣгктэнне чо̄гкэшь",
+				"example_transcription": "taar'm soon š'iigkteɲ'ɲ'e čoogkeš'",
+				"example_definition": "его сегодня сильно ругали"
+			}
+		]
+	}, {
+		"cyrillic_backwards": "атфоч",
+		"transcription_backwards": "atfoč",
+		"cyrillic": "чофта",
+		"transcription": "čofta",
+		"derived_cyrillic": "чофта",
+		"derived_transcription": "čofta",
+		"form_cyrillic": "",
+		"form_transcription": "",
+		"pos": "",
+		"common_number": "",
+		"type": "",
+		"type_alternation": "",
+		"definitions": ["очень"],
+		"examples": [{
+				"example_cyrillic": "чофта шӣг",
+				"example_transcription": "čofta š'iig",
+				"example_definition": "очень хороший"
+			}, {
+				"example_cyrillic": "елле чофта угке, пэ̄ҏҏт лӣ ра̄ййкан",
+				"example_transcription": "jel'l'e čofta ugk'e, peer̥r̥t l'ii raajjkan",
+				"example_definition": "посл. не сплетничайте, дом дырявый;  и у стен есть уши"
+			}
+		]
+	}, {
+		"cyrillic_backwards": "этннэнввуч",
+		"transcription_backwards": "etnnenvvuč",
+		"cyrillic": "чуввнэннтэ",
+		"transcription": "čuvvnennte",
+		"derived_cyrillic": "чувв",
+		"derived_transcription": "čuvv",
+		"form_cyrillic": "",
+		"form_transcription": "",
+		"pos": "Verb",
+		"common_number": "",
+		"type": "II",
+		"type_alternation": "1*",
+		"definitions": ["безл. светать, рассветать (постоянно; иногда, бывало)"],
+		"examples": [{
+				"example_cyrillic": "та̄лльва пе̄ййв чуввнаннт маӈӈьдэнне",
+				"example_transcription": "taal'l'va p'eejjv čuvvnannt maŋ'ŋ'deɲ'ɲ'e",
+				"example_definition": "зимой светает поздно"
+			}
+		]
+	}, {
+		"cyrillic_backwards": "эндэлздӯч",
+		"transcription_backwards": "endelʒuuč",
+		"cyrillic": "чӯдзлэднэ",
+		"transcription": "čuuʒledne",
+		"derived_cyrillic": "чӯдзе",
+		"derived_transcription": "čuuʒ'e",
+		"form_cyrillic": "",
+		"form_transcription": "",
+		"pos": "Verb",
+		"common_number": "",
+		"type": "III",
+		"type_alternation": "",
+		"definitions": ["ушибаться обо что (постоянно; иногда, бывало)"],
+		"examples": [{
+				"example_cyrillic": "со̄нн пай чӯдзлэдант вэсьт тэнн ке̄ддҍкэ",
+				"example_transcription": "soonn paj čuuʒledant ves't tenn k'eeddke",
+				"example_definition": "он всегда ушибается об этот камень"
+			}
+		]
+	}
+]
