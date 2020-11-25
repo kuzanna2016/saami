@@ -1,68 +1,177 @@
 from flask import Flask, request, render_template
-import pandas as pd
-import numpy as np
-import pickle
-from scipy import sparse
-from gensim.models import KeyedVectors
-from search import search_tfidf, search_bm25, search_w2v_mean, search_w2v_matrices, find_answers
-from preprocess_query import to_lemmas, to_stemms
+import mysql.connector
+import re
 
 app = Flask(__name__)
 
-def initialize_all():
-    global answers
-    global questions
-    global to_tf
-    global tfidf_matrix
-    global to_tfidf
-    global bm25_matrix
-    global w2v_matrices
-    global w2v_matrix
-    global w2v
-    answers = pd.read_csv('data/final_answers.tsv',sep='\t',index_col=0)
-    questions = pd.read_csv('data/final_questions.tsv', sep='\t')
+def connect_to_db():
+    global con
+    global cur
+    with open('config.txt', encoding='utf-8') as f:
+        PASSWORD = f.read()
+    con = mysql.connector.connect(host='127.0.0.1', port=3306, database='kuruch', user='root', password=PASSWORD)
+    cur = con.cursor(dictionary=True)
 
-    to_tfidf = pickle.load(open('vectorizers/to_tfidf', 'rb'))
-    tfidf_matrix = sparse.load_npz('matrices/tfidf.npz')
+def get_options_lists():
+    global poses
+    global from_sounds
+    global to_sounds
 
-    to_tf = pickle.load(open('vectorizers/to_tf', 'rb'))
-    bm25_matrix = sparse.load_npz('matrices/bm25.npz')
+    cur.execute("""
+    SELECT DISTINCT pos FROM kuruch.lexemes;
+    """)
+    res = cur.fetchall()
+    poses = [r['pos'] for r in res if r['pos'] is not None]
+    poses = sorted(poses, key=lambda x: x[1])
+    cur.execute("""
+    SELECT DISTINCT `from` FROM kuruch.alternations;
+    """)
+    res = cur.fetchall()
+    from_sounds = [r['from'] for r in res if r['from'] is not None]
+    from_sounds = sorted(from_sounds)
+    cur.execute("""
+        SELECT DISTINCT `to` FROM kuruch.alternations;
+        """)
+    res = cur.fetchall()
+    to_sounds = [r['to'] for r in res if r['to'] is not None]
+    to_sounds = sorted(to_sounds)
 
-    w2v_matrix = np.load('matrices/w2vmean.npy')
-    w2v_matrices = np.load('matrices/w2vmatrices.npy', allow_pickle=True)
 
-    w2v = KeyedVectors.load('word2vec/araneum_none_fasttextcbow_300_5_2018.model')
+def parse_filter(req):
+    filter_dict = {}
+    for s in req:
+        name = s[0]
+        table = name.split('.')[0].replace('filter_', '')
+        if table not in filter_dict:
+            filter_dict[table] = {}
+        column_value = s[0].split('.')[1]
+        search = re.search(r'(\w*?)_(regex|\d\*?|)$', column_value)
+        regex = None
+        if search != None:
+            column = search.group(1)
+            if search.group(2) == 'regex':
+                regex = s[1]
+            else:
+                value = search.group(2)
+        else:
+            column = column_value
+            value = s[1]
+        if column not in filter_dict[table]:
+            filter_dict[table][column] = {'values': []}
+        if regex:
+            filter_dict[table][column]['regex'] = regex
+        else:
+            filter_dict[table][column]['values'].append(value)
+
+    return filter_dict
 
 
-def search(query, search_method, top_n):
-    if search_method == 'TF-IDF':
-        query = to_stemms(query)
-        search_result = search_tfidf(tfidf_matrix, query, to_tfidf, top_n=top_n)
-    elif search_method == 'BM25':
-        query = to_stemms(query)
-        search_result = search_bm25(bm25_matrix, query, to_tf, top_n=top_n)
-    elif search_method == 'word2vec_mean_vec':
-        query = to_lemmas(query)
-        search_result = search_w2v_mean(w2v_matrix, query, w2v, top_n=top_n)
-    elif search_method == 'word2vec_matrix':
-        query = to_lemmas(query)
-        search_result = search_w2v_matrices(w2v_matrices, query, w2v, top_n=top_n)
-    else:
-        raise TypeError('unsupported search method')
-    return find_answers(search_result, questions, answers)[::-1]
+def parse_show(req):
+    show_dict = {}
+    for s in req:
+        name = s[0]
+        table, column = name.split('.')
+        if table not in show_dict:
+            show_dict[table] = []
+        show_dict[table].append(column)
+    return show_dict
+
+def parse_request(req):
+    show_list = []
+    filter_list = []
+    for s in req.items():
+        if s[0] == 'limit':
+            limit = s[1]
+            continue
+        if 'filter' in s[0]:
+            filter_list.append(s)
+        else:
+            show_list.append(s)
+    show_dict = parse_show(show_list)
+    filter_dict = parse_filter(filter_list)
+    if limit == "no limit":
+        limit = 1000;
+    return limit, show_dict, filter_dict
+
+
+# def search(filter_dict, show_dict, limit):
+#     for table, columns in filter_dict.items():
+#         conditions = []
+#         for column, values in columns.items():
+#             if 'regex' in values:
+#                 regex = values['regex']
+#                 if regex == 'b':
+#                     conds = [f'({table}.`{column}` LIKE "{value}%")' for value in values['values'] if len(value) > 0]
+#                 elif regex == 'e':
+#                     conds = [f'({table}.`{column}` LIKE "%{value}")' for value in values['values'] if len(value) > 0]
+#                 elif regex == 'i':
+#                     conds = [f'({table}.`{column}` LIKE "%{value}%")' for value in values['values'] if len(value) > 0]
+#             else:
+#                 conds = [f'({table}.`{column}` LIKE "%{value}%")' for value in values['values'] if len(value) > 0]
+#             conditions.extend(conds)
+#
+#         selects = ', '.join([f'`{column}`' for column in show_dict[table]])
+#         conditions = ' AND '.join(conditions)
+#
+#         req = f"""
+#         SELECT {selects} FROM kuruch.{table}
+#         WHERE {conditions}
+#         LIMIT {limit};
+#         """
+#         print(req)
+#         cur.execute(req)
+#         res = cur.fetchall()
+#         return show_dict[table], res
+#         break
+
+
+def search(table, filter_dict, show_dict, limit):
+    columns = filter_dict[table]
+    conditions = []
+    for column, values in columns.items():
+        if 'regex' in values:
+            regex = values['regex']
+            if regex == 'b':
+                conds = [f'({table}.`{column}` LIKE "{value}%")' for value in values['values'] if len(value) > 0]
+            elif regex == 'e':
+                conds = [f'({table}.`{column}` LIKE "%{value}")' for value in values['values'] if len(value) > 0]
+            elif regex == 'i':
+                conds = [f'({table}.`{column}` LIKE "%{value}%")' for value in values['values'] if len(value) > 0]
+        else:
+            conds = [f'({table}.`{column}` LIKE "%{value}%")' for value in values['values'] if len(value) > 0]
+        conditions.extend(conds)
+
+    selects = ', '.join([f'`{column}`' for column in show_dict[table]])
+    conditions = ' AND '.join(conditions)
+
+    req = f"""
+    SELECT {selects} FROM kuruch.{table}
+    WHERE {conditions}
+    LIMIT {limit};
+    """
+    print(req)
+    cur.execute(req)
+    res = cur.fetchall()
+    return show_dict[table], res
 
 
 @app.route('/')
 def index():
     if request.args:
-        query = request.args['query']
-        top_n = int(request.args['top_n'])
-        search_method = request.args['search_method']
-        answers = search(query, search_method, top_n)
-        return render_template('index.html', answers=[(n+1,answer) for n,answer in enumerate(answers)], query=query)
-    return render_template('index.html', answers=[], query='Your query')
+        print(request.args)
+        limit, show_dict, filter_dict = parse_request(request.args)
+        print(show_dict)
+        print(filter_dict)
+        columns, result = search('lexemes', filter_dict, show_dict, limit)
+        # columns, result = search(filter_dict, show_dict, limit)
+        print(columns)
+        result = [list(r.values()) for r in result]
+        print(result)
+        return render_template('index.html', poses=enumerate(poses), from_sounds=enumerate(from_sounds), to_sounds=enumerate(to_sounds), columns=columns, result=result)
+    return render_template('index.html', poses=enumerate(poses), from_sounds=enumerate(from_sounds), to_sounds=enumerate(to_sounds), columns=[], result=[])
 
 
 if __name__ == '__main__':
-    initialize_all()
+    connect_to_db()
+    get_options_lists()
     app.run(debug=True)

@@ -15,13 +15,13 @@
 				</div>
 			</div>
 			<div class="form-row">
-				<a class="btn btn-light col-2 m-1" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">lexeme</a>
-				<button class="btn btn-light col-2 m-1" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">suffix</button>
-				<button class="btn btn-light col-2 m-1" type="button" data-toggle="collapse" data-target="#multiCollapseExample3" aria-expanded="false" aria-controls="multiCollapseExample3">alternations</button>
-				<button class="btn btn-light col-2 m-1" type="button" data-toggle="collapse" data-target="#multiCollapseExample4" aria-expanded="false" aria-controls="multiCollapseExample4">examples</button>
-				<button class="btn btn-dark col m-1" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2 multiCollapseExample3 multiCollapseExample4">Open/close all</button>
+				<a class="btn btn-light col-2 m-1" data-toggle="collapse" href="#lexemes" role="button" aria-expanded="false" aria-controls="lexemes">lexemes</a>
+				<button class="btn btn-light col-2 m-1" type="button" data-toggle="collapse" data-target="#suffixes" aria-expanded="false" aria-controls="suffixes">suffixes</button>
+				<button class="btn btn-light col-2 m-1" type="button" data-toggle="collapse" data-target="#alternations" aria-expanded="false" aria-controls="alternations">alternations</button>
+				<button class="btn btn-light col-2 m-1" type="button" data-toggle="collapse" data-target="#examples" aria-expanded="false" aria-controls="examples">examples</button>
+				<button class="btn btn-dark col m-1" type="button" data-toggle="collapse" data-target=".multi-collapse" aria-expanded="false" aria-controls="suffixes lexemes alternations examples">Open/close all</button>
 				<div class="form-group  col m-1">
-					<select class="form-control" id="exampleFormControlSelect1">
+					<select class="form-control" id="limit" name="limit">
 						<option>no limit</option>
 						<option>5</option>
 						<option>10</option>
@@ -32,117 +32,121 @@
 			</div>
 			<div class="form-row">
 				<div class="col col-2 m-1">
-					<div class="collapse multi-collapse" id="multiCollapseExample1">
+					<div class="collapse multi-collapse" id="lexemes">
 						<div class="card card-body">
 							<div class="form-check">
-								<input class="form-check-input" type="checkbox" id="1inlineCheckbox1" value="option1">
-								<label class="form-check-label" for="1inlineCheckbox1">cyrillic</label>
+								<input class="form-check-input" type="checkbox" id="lexemes_cyrillic" name="lexemes.cyrillic" value="cyrillic">
+								<label class="form-check-label" for="lexemes_cyrillic">cyrillic</label>
 							</div>
 							<div class="form-check">
-								<input class="form-check-input" type="checkbox" id="1inlineCheckbox2" value="option2">
-								<label class="form-check-label" for="1inlineCheckbox2">transcription</label>
+								<input class="form-check-input" type="checkbox" id="lexemes_transcription" name="lexemes.transcription" value="transcription">
+								<label class="form-check-label" for="lexemes_transcription">transcription</label>
 							</div>
 							<div class="form-check">
-								<input class="form-check-input" type="checkbox" id="1inlineCheckbox10" value="option3">
-								<label class="form-check-label" for="1inlineCheckbox10">derived from</label>
+								<input class="form-check-input" type="checkbox" id="derivatives_derived_from" name="derivatives.derived_from" value="derived_from">
+								<label class="form-check-label" for="derivatives_derived_from">derived from</label>
 							</div>
 							<div class="form-check">
-								<input class="form-check-input" type="checkbox" id="1inlineCheckbox11" value="option3">
-								<label class="form-check-label" for="1inlineCheckbox11">root</label>
+								<input class="form-check-input" type="checkbox" id="derivatives_root" name="derivatives.root" value="root">
+								<label class="form-check-label" for="derivatives_root">root</label>
 							</div>
 							<div class="form-check">
-								<input class="form-check-input" type="checkbox" id="1inlineCheckbox3" value="option3">
-								<label class="form-check-label" for="1inlineCheckbox3">form_cyrillic</label>
+								<input class="form-check-input" type="checkbox" id="lexemes_def" name="lexemes.definition" value="definition">
+								<label class="form-check-label" for="lexemes_def">definition</label>
 							</div>
 							<div class="form-check">
-								<input class="form-check-input" type="checkbox" id="1inlineCheckbox4" value="option3">
-								<label class="form-check-label" for="1inlineCheckbox4">form_transcription</label>
+								<input class="form-check-input" type="checkbox" id="lexemes_form_cyrillic" name="lexemes.form_cyrillic" value="form_cyrillic">
+								<label class="form-check-label" for="lexemes_form_cyrillic">form cyrillic</label>
 							</div>
 							<div class="form-check">
-								<input class="form-check-input" type="checkbox" id="1inlineCheckbox5" value="option3">
-								<label class="form-check-label" for="1inlineCheckbox5">pos</label>
+								<input class="form-check-input" type="checkbox" id="lexemes_form_transcription" name="lexemes.form_transcription" value="form_transcription">
+								<label class="form-check-label" for="lexemes_form_transcription">form transcription</label>
 							</div>
 							<div class="form-check">
-								<input class="form-check-input" type="checkbox" id="1inlineCheckbox6" value="option3">
-								<label class="form-check-label" for="1inlineCheckbox6">cn</label>
+								<input class="form-check-input" type="checkbox" id="lexemes_pos" name="lexemes.pos" value="pos">
+								<label class="form-check-label" for="lexemes_pos">pos</label>
 							</div>
 							<div class="form-check">
-								<input class="form-check-input" type="checkbox" id="1inlineCheckbox7" value="option3">
-								<label class="form-check-label" for="1inlineCheckbox7">grammar</label>
+								<input class="form-check-input" type="checkbox" id="lexemes_cn" name="lexemes.cn" value="cn">
+								<label class="form-check-label" for="lexemes_cn">common number</label>
 							</div>
 							<div class="form-check">
-								<input class="form-check-input" type="checkbox" id="1inlineCheckbox8" value="option3">
-								<label class="form-check-label" for="1inlineCheckbox8">type</label>
+								<input class="form-check-input" type="checkbox" id="lexemes_grammar" name="lexemes.grammar" value="grammar">
+								<label class="form-check-label" for="lexemes_grammar">grammar</label>
 							</div>
 							<div class="form-check">
-								<input class="form-check-input" type="checkbox" id="1inlineCheckbox9" value="option3">
-								<label class="form-check-label" for="1inlineCheckbox9">type_alternation</label>
+								<input class="form-check-input" type="checkbox" id="lexemes_type" name="lexemes.type" value="type">
+								<label class="form-check-label" for="lexemes_type">type</label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" id="lexemes_type_alternation" name="lexemes.type_alternation" value="type_alternation">
+								<label class="form-check-label" for="lexemes_type_alternation">type_alternation</label>
 							</div>
 						</div>
 					</div>
 				</div>
-					<div class="col col-2 m-1">
-						<div class="collapse multi-collapse" id="multiCollapseExample2">
-							<div class="card card-body">
-								<div class="form-check">
-									<input class="form-check-input" type="checkbox" id="2inlineCheckbox1" value="option1">
-									<label class="form-check-label" for="2inlineCheckbox1">form</label>
-								</div>
-								<div class="form-check">
-									<input class="form-check-input" type="checkbox" id="2inlineCheckbox2" value="option2">
-									<label class="form-check-label" for="2inlineCheckbox2">meaning</label>
-								</div>
-								<div class="form-check">
-									<input class="form-check-input" type="checkbox" id="2inlineCheckbox3" value="option3">
-									<label class="form-check-label" for="2inlineCheckbox3">length</label>
-								</div>
-								<div class="form-check">
-									<input class="form-check-input" type="checkbox" id="2inlineCheckbox4" value="option4">
-									<label class="form-check-label" for="2inlineCheckbox3">palatalization</label>
-								</div>
-								<div class="form-check">
-									<input class="form-check-input" type="checkbox" id="2inlineCheckbox5" value="option5">
-									<label class="form-check-label" for="2inlineCheckbox3">voicing</label>
-								</div>
-							</div>
-						</div>
-					</div>
 				<div class="col col-2 m-1">
-				<div class="collapse multi-collapse" id="multiCollapseExample3">
-					<div class="card card-body">
-					<div class="form-check">
-						<input class="form-check-input" type="checkbox" id="3inlineCheckbox1" value="option1">
-						<label class="form-check-label" for="3inlineCheckbox1">from</label>
-					</div>
-					<div class="form-check">
-						<input class="form-check-input" type="checkbox" id="3inlineCheckbox2" value="option2">
-						<label class="form-check-label" for="3inlineCheckbox2">to</label>
-					</div>
-					<div class="form-check">
-						<input class="form-check-input" type="checkbox" id="3inlineCheckbox3" value="option3">
-						<label class="form-check-label" for="3inlineCheckbox3">isVowel</label>
-					</div>
-					</div>
-				</div>
-			  </div>
-			  <div class="col col-2 m-1">
-				<div class="collapse multi-collapse" id="multiCollapseExample4">
-					<div class="card card-body">
-					<div class="form-check">
-						<input class="form-check-input" type="checkbox" id="4inlineCheckbox1" value="option1">
-						<label class="form-check-label" for="4inlineCheckbox1">cyrillic</label>
-					</div>
-					<div class="form-check">
-						<input class="form-check-input" type="checkbox" id="4inlineCheckbox2" value="option2">
-						<label class="form-check-label" for="4inlineCheckbox2">transcription</label>
-					</div>
-					<div class="form-check">
-						<input class="form-check-input" type="checkbox" id="4inlineCheckbox3" value="option3">
-						<label class="form-check-label" for="4inlineCheckbox3">definition</label>
-					</div>
+					<div class="collapse multi-collapse" id="suffixes">
+						<div class="card card-body">
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" id="suffixes_form" name="suffixes.form" value="form">
+								<label class="form-check-label" for="suffixes_form">form</label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" id="suffixes_meaning" name="suffixes.meaning" value="meaning">
+								<label class="form-check-label" for="suffixes_meaning">meaning</label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" id="suffixes_length" name="suffixes_forms.length" value="length">
+								<label class="form-check-label" for="suffixes_length">length</label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" id="suffixes_palatalization" name="suffixes_forms.palatalization" value="palatalization">
+								<label class="form-check-label" for="suffixes_palatalization">palatalization</label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" id="suffixes_voicing" name="suffixes_forms.voicing" value="voicing">
+								<label class="form-check-label" for="suffixes_voicing">voicing</label>
+							</div>
+						</div>
 					</div>
 				</div>
-			  </div>
+				<div class="col col-2 m-1">
+					<div class="collapse multi-collapse" id="alternations">
+						<div class="card card-body">
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" id="alternations_from" name="alternations.from" value="from">
+							<label class="form-check-label" for="alternations_from">from</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" id="alternations_to" name="alternations.to" value="to">
+							<label class="form-check-label" for="alternations_to">to</label>
+						</div>
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" id="alternations_isVowel" name="alternations.isVowel" value="isVowel">
+							<label class="form-check-label" for="alternations_isVowel">isVowel</label>
+						</div>
+						</div>
+					</div>
+			  	</div>
+				<div class="col col-2 m-1">
+					<div class="collapse multi-collapse" id="examples">
+						<div class="card card-body">
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" id="examples_cyrillic" name="examples.cyrillic" value="cyrillic">
+								<label class="form-check-label" for="examples_cyrillic">cyrillic</label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" id="examples_transcription" name="examples.transcription" value="transcription">
+								<label class="form-check-label" for="examples_transcription">transcription</label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" id="examples_definition" name="examples.def" value="definition">
+								<label class="form-check-label" for="examples_definition">definition</label>
+							</div>
+						</div>
+					</div>
+			    </div>
 			</div>
 			<div class="form-row">
 				<div class="col mx-2">
@@ -150,386 +154,337 @@
 				</div>
 			</div>
 			<div class="form-row m-1">
-				<a class="btn btn-light col-12" data-toggle="collapse" href="#filter1" role="button" aria-expanded="false" aria-controls="filter1">lexeme</a>
-				<div class="collapse multi-collapse my-1 mx-4 p-1 col" id="filter1">
+				<a class="btn btn-light col-12" data-toggle="collapse" href="#filter_lexemes" role="button" aria-expanded="false" aria-controls="filter_lexemes">lexemes</a>
+				<div class="collapse multi-collapse my-1 mx-4 p-1 col" id="filter_lexemes">
 					<div class="row my-2">
 						<div class="col py-2 mx-1 bg-light rounded border border-info">
-							<label for="exampleFormControlInput1">cyrillic</label>
-							<input type="text" class="form-control" id="exampleFormControlInput1">
+							<label for="filter_lexemes_cyrillic">cyrillic</label>
+							<input type="text" class="form-control" id="filter_lexemes_cyrillic" name="filter_lexemes.cyrillic">
 							<div class="form-check form-check-inline">
-								<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-								<label class="form-check-label" for="inlineRadio1">^</label>
+								<input class="form-check-input" type="radio" id="filter_lexemes_cyrillic_b" name="filter_lexemes.cyrillic_regex" value="b">
+								<label class="form-check-label" for="filter_lexemes_cyrillic_b">^</label>
 							</div>
 							<div class="form-check form-check-inline">
-								<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-								<label class="form-check-label" for="inlineRadio2">$</label>
+								<input class="form-check-input" type="radio" id="filter_lexemes_cyrillic_e" name="filter_lexemes.cyrillic_regex" value="e">
+								<label class="form-check-label" for="filter_lexemes_cyrillic_e">$</label>
 							</div>
 							<div class="form-check form-check-inline">
-								<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option2">
-								<label class="form-check-label" for="inlineRadio3">_</label>
-							</div>
-						</div>
-						<div class="col py-2 mx-1 bg-light rounded border border-info">
-							<label for="exampleFormControlInput1">transcription</label>
-							<input type="text" class="form-control" id="exampleFormControlInput1">
-							<div class="form-check form-check-inline">
-								<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-								<label class="form-check-label" for="inlineRadio1">^</label>
-							</div>
-							<div class="form-check form-check-inline">
-								<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-								<label class="form-check-label" for="inlineRadio2">$</label>
-							</div>
-							<div class="form-check form-check-inline">
-								<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option2">
-								<label class="form-check-label" for="inlineRadio3">_</label>
+								<input class="form-check-input" type="radio" id="filter_lexemes_cyrillic_i" name="filter_lexemes.cyrillic_regex" value="i">
+								<label class="form-check-label" for="filter_lexemes_cyrillic_i">_</label>
 							</div>
 						</div>
 						<div class="col py-2 mx-1 bg-light rounded border border-info">
-							<label for="exampleFormControlInput1">form_cyrillic</label>
-							<input type="text" class="form-control" id="exampleFormControlInput1">
+							<label for="filter_lexemes_transcription">transcription</label>
+							<input type="text" class="form-control" id="filter_lexemes_transcription" name="filter_lexemes.transcription">
 							<div class="form-check form-check-inline">
-								<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-								<label class="form-check-label" for="inlineRadio1">^</label>
+								<input class="form-check-input" type="radio" id="filter_lexemes_transcription_b" name="filter_lexemes.transcription_regex" value="b">
+								<label class="form-check-label" for="filter_lexemes_transcription_b">^</label>
 							</div>
 							<div class="form-check form-check-inline">
-								<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-								<label class="form-check-label" for="inlineRadio2">$</label>
+								<input class="form-check-input" type="radio" id="filter_lexemes_transcription_e" name="filter_lexemes.transcription_regex" value="e">
+								<label class="form-check-label" for="filter_lexemes_transcription_e">$</label>
 							</div>
 							<div class="form-check form-check-inline">
-								<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option2">
-								<label class="form-check-label" for="inlineRadio3">_</label>
+								<input class="form-check-input" type="radio" id="filter_lexemes_transcription_i" name="filter_lexemes.transcription_regex" value="i">
+								<label class="form-check-label" for="filter_lexemes_transcription_i">_</label>
 							</div>
 						</div>
 						<div class="col py-2 mx-1 bg-light rounded border border-info">
-							<label for="exampleFormControlInput1">form_transcription</label>
-							<input type="text" class="form-control" id="exampleFormControlInput1">
+							<label for="filter_lexemes_form_cyrillic">form_cyrillic</label>
+							<input type="text" class="form-control" id="filter_lexemes_form_cyrillic" name="filter_lexemes.form_cyrillic">
 							<div class="form-check form-check-inline">
-								<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-								<label class="form-check-label" for="inlineRadio1">^</label>
+								<input class="form-check-input" type="radio" id="filter_lexemes_form_cyrillic_b" name="filter_lexemes.form_cyrillic_regex" value="b">
+								<label class="form-check-label" for="filter_lexemes_form_cyrillic_b">^</label>
 							</div>
 							<div class="form-check form-check-inline">
-								<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-								<label class="form-check-label" for="inlineRadio2">$</label>
+								<input class="form-check-input" type="radio" id="filter_lexemes_form_cyrillic_e" name="filter_lexemes.form_cyrillic_regex" value="e">
+								<label class="form-check-label" for="filter_lexemes_form_cyrillic_e">$</label>
 							</div>
 							<div class="form-check form-check-inline">
-								<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option2">
-								<label class="form-check-label" for="inlineRadio3">_</label>
+								<input class="form-check-input" type="radio" id="filter_lexemes_form_cyrillic_i" name="filter_lexemes.form_cyrillic_regex" value="i">
+								<label class="form-check-label" for="filter_lexemes_form_cyrillic_i">_</label>
+							</div>
+						</div>
+						<div class="col py-2 mx-1 bg-light rounded border border-info">
+							<label for="filter_lexemes_form_transcription">form_transcription</label>
+							<input type="text" class="form-control" id="filter_lexemes_form_transcription" name="filter_lexemes.form_transcription">
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="radio" id="filter_lexemes_form_transcription_b" name="filter_lexemes.form_transcription_regex" value="b">
+								<label class="form-check-label" for="filter_lexemes_form_transcription_b">^</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="radio" id="filter_lexemes_form_transcription_e" name="filter_lexemes.form_transcription_regex" value="e">
+								<label class="form-check-label" for="filter_lexemes_form_transcription_e">$</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="radio" id="filter_lexemes_form_transcription_i" name="filter_lexemes.form_transcription_regex" value="i">
+								<label class="form-check-label" for="filter_lexemes_form_transcription_i">_</label>
 							</div>
 						</div>
 					</div>
 					<div class="row my-2">
 						<div class="col py-2 mx-1 bg-light rounded border border-info">
-							<label for="exampleFormControlInput1">derived_from</label>
-							<input type="text" class="form-control" id="exampleFormControlInput1">
+							<label for="filter_lexemes_derived_from">derived_from</label>
+							<input type="text" class="form-control" id="filter_lexemes_derived_from" name="filter_lexemes.derived_from">
 							<div class="form-check form-check-inline">
-								<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-								<label class="form-check-label" for="inlineRadio1">^</label>
+								<input class="form-check-input" type="radio" id="filter_lexemes_derived_from_b" name="filter_lexemes.derived_from_regex" value="b">
+								<label class="form-check-label" for="filter_lexemes_derived_from_b">^</label>
 							</div>
 							<div class="form-check form-check-inline">
-								<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-								<label class="form-check-label" for="inlineRadio2">$</label>
+								<input class="form-check-input" type="radio" id="filter_lexemes_derived_from_e" name="filter_lexemes.derived_from_regex" value="e">
+								<label class="form-check-label" for="filter_lexemes_derived_from_e">$</label>
 							</div>
 							<div class="form-check form-check-inline">
-								<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option2">
-								<label class="form-check-label" for="inlineRadio3">_</label>
-							</div>
-						</div>
-						<div class="col py-2 mx-1 bg-light rounded border border-info">
-							<label for="exampleFormControlInput1">root</label>
-							<input type="text" class="form-control" id="exampleFormControlInput1">
-							<div class="form-check form-check-inline">
-								<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-								<label class="form-check-label" for="inlineRadio1">^</label>
-							</div>
-							<div class="form-check form-check-inline">
-								<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-								<label class="form-check-label" for="inlineRadio2">$</label>
-							</div>
-							<div class="form-check form-check-inline">
-								<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option2">
-								<label class="form-check-label" for="inlineRadio3">_</label>
+								<input class="form-check-input" type="radio" id="filter_lexemes_derived_from_i" name="filter_lexemes.derived_from_regex" value="i">
+								<label class="form-check-label" for="filter_lexemes_derived_from_i">_</label>
 							</div>
 						</div>
 						<div class="col py-2 mx-1 bg-light rounded border border-info">
-							<label for="exampleFormControlInput1">definition</label>
-							<input type="text" class="form-control" id="exampleFormControlInput1">
+							<label for="filter_lexemes_root">root</label>
+							<input type="text" class="form-control" id="filter_lexemes_root" name="filter_lexemes.root">
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="radio" id="filter_lexemes_root_b" name="filter_lexemes.root_regex" value="b">
+								<label class="form-check-label" for="filter_lexemes_root_b">^</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="radio" id="filter_lexemes_root_e" name="filter_lexemes.root_regex" value="e">
+								<label class="form-check-label" for="filter_lexemes_root_e">$</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input class="form-check-input" type="radio" id="filter_lexemes_root_i" name="filter_lexemes.root_regex" value="i">
+								<label class="form-check-label" for="filter_lexemes_root_i">_</label>
+							</div>
 						</div>
 						<div class="col py-2 mx-1 bg-light rounded border border-info">
-							<label for="exampleFormControlInput1">grammar</label>
-							<input type="text" class="form-control" id="exampleFormControlInput1">
+							<label for="filter_lexemes_definition">definition</label>
+							<input type="text" class="form-control" id="filter_lexemes_definition" name="filter_lexemes.definition">
+						</div>
+						<div class="col py-2 mx-1 bg-light rounded border border-info">
+							<label for="filter_lexemes_grammar">grammar</label>
+							<input type="text" class="form-control" id="filter_lexemes_grammar" name="filter_lexemes.grammar">
 						</div>
 					</div>
 					<div class="row my-2">
 						<div class="col-2 py-2 mx-1 bg-light rounded border border-info">
+							<label>pos</label><br>
+							<div style="overflow-y: scroll;height: 60px;">
+								{% for i, pos in poses %}
+								<div class="form-check">
+									<input class="form-check-input" type="checkbox" id="filter_lexemes_pos_type{{ i }}" name="filter_lexemes.pos_{{ i }}" value="{{ i }}">
+									<label for="filter_lexemes_pos_type{{ i }}">{{ pos }}</label>
+								</div>
+								{% endfor %}
+							</div>
+						</div>
+						<div class="col-2 py-2 mx-1 bg-light rounded border border-info">
 							<div class="form-check">
-								<input class="form-check-input" type="checkbox" id="cn1" value="option3">
-								<label for="cn1">common number</label>
+								<input class="form-check-input" type="checkbox" id="filter_lexemes_cn1" name="filter_lexemes.cn_1" value="1">
+								<label for="filter_lexemes_cn1">common number</label>
 							</div>
 							<div class="form-check">
-								<input class="form-check-input" type="checkbox" id="cn0" value="option3">
-								<label for="cn0">not common number</label>
+								<input class="form-check-input" type="checkbox" id="filter_lexemes_cn0" name="filter_lexemes.cn_0" value="0">
+								<label for="filter_lexemes_cn0">not common number</label>
 							</div>
 						</div>
 						<div class="col py-2 mx-1 bg-light rounded border border-info">
-							<label for="type">type</label><br>
-							<div class="form-check form-check-inline" id="type">
-								<input class="form-check-input" type="checkbox" id="type0" value="option3">
-								<label for="type0">none</label>
+							<label for="filter_lexemes_type">type</label><br>
+							<div class="form-check form-check-inline" id="filter_lexemes_type" name="filter_lexemes.type">
+								<input class="form-check-input" type="checkbox" id="filter_lexemes_type0" name="filter_lexemes.type_0" value="0">
+								<label for="filter_lexemes_type0">none</label>
 							</div>
 							<div class="form-check form-check-inline">
-								<input class="form-check-input" type="checkbox" id="type1" value="option3">
-								<label for="type1">1</label>
+								<input class="form-check-input" type="checkbox" id="filter_lexemes_type1" name="filter_lexemes.type_1" value="1">
+								<label for="filter_lexemes_type1">1</label>
 							</div>
 							<div class="form-check form-check-inline">
-								<input class="form-check-input" type="checkbox" id="type2" value="option3">
-								<label for="type2">2</label>
+								<input class="form-check-input" type="checkbox" id="filter_lexemes_type2" name="filter_lexemes.type_2" value="2">
+								<label for="filter_lexemes_type2">2</label>
 							</div>
 							<div class="form-check form-check-inline">
-								<input class="form-check-input" type="checkbox" id="type3" value="option3">
-								<label for="type3">3</label>
+								<input class="form-check-input" type="checkbox" id="filter_lexemes_type3" name="filter_lexemes.type_3" value="3">
+								<label for="filter_lexemes_type3">3</label>
 							</div>
 							<div class="form-check form-check-inline">
-								<input class="form-check-input" type="checkbox" id="type4" value="option3">
-								<label for="type4">4</label>
+								<input class="form-check-input" type="checkbox" id="filter_lexemes_type4" name="filter_lexemes.type_4" value="4">
+								<label for="filter_lexemes_type4">4</label>
 							</div>
 							<div class="form-check form-check-inline">
-								<input class="form-check-input" type="checkbox" id="type5" value="option3">
-								<label for="type5">5</label>
+								<input class="form-check-input" type="checkbox" id="filter_lexemes_type5" name="filter_lexemes.type_5" value="5">
+								<label for="filter_lexemes_type5">5</label>
 							</div>
 						</div>
 						<div class="col py-2 mx-1 bg-light rounded border border-info">
 							<label for="typealt">type alternation</label><br>
 							<div class="form-check form-check-inline" id="typealt">
-								<input class="form-check-input" type="checkbox" id="typealt0" value="option3">
-								<label for="typealt0">none</label>
+								<input class="form-check-input" type="checkbox" id="filter_lexemes_typealt0" name="filter_lexemes.type_alternation_0" value="0">
+								<label for="filter_lexemes_typealt0">none</label>
 							</div>
 							<div class="form-check form-check-inline">
-								<input class="form-check-input" type="checkbox" id="typealt1" value="option3">
-								<label for="typealt1">1*</label>
+								<input class="form-check-input" type="checkbox" id="filter_lexemes_typealt1" name="filter_lexemes.type_alternation_1*" value="1*">
+								<label for="filter_lexemes_typealt1">1*</label>
 							</div>
 							<div class="form-check form-check-inline">
-								<input class="form-check-input" type="checkbox" id="typealt2" value="option3">
-								<label for="typealt2">1</label>
+								<input class="form-check-input" type="checkbox" id="filter_lexemes_typealt2" name="filter_lexemes.type_alternation_1" value="1">
+								<label for="filter_lexemes_typealt2">1</label>
 							</div>
 							<div class="form-check form-check-inline">
-								<input class="form-check-input" type="checkbox" id="typealt3" value="option3">
-								<label for="typealt3">2</label>
+								<input class="form-check-input" type="checkbox" id="filter_lexemes_typealt3" name="filter_lexemes.type_alternation_2" value="2">
+								<label for="filter_lexemes_typealt3">2</label>
 							</div>
 							<div class="form-check form-check-inline">
-								<input class="form-check-input" type="checkbox" id="typealt4" value="option3">
-								<label for="typealt4">3</label>
+								<input class="form-check-input" type="checkbox" id="filter_lexemes_typealt4" name="filter_lexemes.type_alternation_3" value="3">
+								<label for="filter_lexemes_typealt4">3</label>
 							</div>
 							<div class="form-check form-check-inline">
-								<input class="form-check-input" type="checkbox" id="typealt5" value="option3">
-								<label for="typealt5">4</label>
+								<input class="form-check-input" type="checkbox" id="filter_lexemes_typealt5" name="filter_lexemes.type_alternation_4" value="4">
+								<label for="filter_lexemes_typealt5">4</label>
 							</div>
 							<div class="form-check form-check-inline">
-								<input class="form-check-input" type="checkbox" id="typealt6" value="option3">
-								<label for="typealt6">4*</label>
+								<input class="form-check-input" type="checkbox" id="filter_lexemes_typealt6" name="filter_lexemes.type_alternation_4*" value="4*">
+								<label for="filter_lexemes_typealt6">4*</label>
 							</div>
 							<div class="form-check form-check-inline">
-								<input class="form-check-input" type="checkbox" id="typealt7" value="option3">
-								<label for="typealt7">5</label>
+								<input class="form-check-input" type="checkbox" id="filter_lexemes_typealt7" name="filter_lexemes.type_alternation_5" value="5">
+								<label for="filter_lexemes_typealt7">5</label>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 			<div class="form-row m-1">
-				<a class="btn btn-light col-12" data-toggle="collapse" href="#filter2" role="button" aria-expanded="false" aria-controls="filter2">suffix</a>
-				<div class="collapse multi-collapse my-1 mx-4 p-1 col" id="filter2">
+				<a class="btn btn-light col-12" data-toggle="collapse" href="#filter_suffixes" role="button" aria-expanded="false" aria-controls="filter_suffixes">suffixes</a>
+				<div class="collapse multi-collapse my-1 mx-4 p-1 col" id="filter_suffixes">
 					<div class="row my-2">
 						<div class="col py-2 mx-1 bg-light rounded border border-info">
-							<label for="exampleFormControlInput1">form</label>
-							<input type="text" class="form-control" id="exampleFormControlInput1">
+							<label for="filter_suffixes_form">form</label>
+							<input type="text" class="form-control" id="filter_suffixes_form" name="filter_suffixes.form">
 							<div class="form-check form-check-inline">
-								<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-								<label class="form-check-label" for="inlineRadio1">^</label>
+								<input class="form-check-input" type="radio" id="filter_suffixes_form_b" name="filter_suffixes.form_regex" value="b">
+								<label class="form-check-label" for="filter_suffixes_form_b">^</label>
 							</div>
 							<div class="form-check form-check-inline">
-								<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-								<label class="form-check-label" for="inlineRadio2">$</label>
+								<input class="form-check-input" type="radio" id="filter_suffixes_form_e" name="filter_suffixes.form_regex" value="e">
+								<label class="form-check-label" for="filter_suffixes_form_e">$</label>
 							</div>
 							<div class="form-check form-check-inline">
-								<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option2">
-								<label class="form-check-label" for="inlineRadio3">_</label>
+								<input class="form-check-input" type="radio" id="filter_suffixes_form_i" name="filter_suffixes.form_regex" value="i">
+								<label class="form-check-label" for="filter_suffixes_form_i">_</label>
 							</div>
 						</div>
 						<div class="col py-2 mx-1 bg-light rounded border border-info">
-							<label for="exampleFormControlInput1">meaning</label>
-							<input type="text" class="form-control" id="exampleFormControlInput1">
+							<label for="filter_suffixes_meaning">meaning</label>
+							<input type="text" class="form-control" id="filter_suffixes_meaning" name="filter_suffixes.meaning">
 						</div>
 						<div class="col-1 py-2 mx-1 bg-light rounded border border-info">
-							<label for="type">length</label><br>
+							<label>length</label><br>
 							<div class="form-check">
-								<input class="form-check-input" type="checkbox" id="type1" value="option3">
-								<label for="type1">--</label>
+								<input class="form-check-input" type="checkbox" id="filter_suffixes_length_type1" name="filter_suffixes_forms.length_0" value="--">
+								<label for="filter_suffixes_length_type1">--</label>
 							</div>
 							<div class="form-check">
-								<input class="form-check-input" type="checkbox" id="type2" value="option3">
-								<label for="type2">++</label>
+								<input class="form-check-input" type="checkbox" id="filter_suffixes_length_type2" name="filter_suffixes_forms.length_1" value="++">
+								<label for="filter_suffixes_length_type2">++</label>
 							</div>
 							<div class="form-check">
-								<input class="form-check-input" type="checkbox" id="type3" value="option3">
-								<label for="type3">-+</label>
+								<input class="form-check-input" type="checkbox" id="filter_suffixes_length_type3" name="filter_suffixes_forms.length_2" value="-+">
+								<label for="filter_suffixes_length_type3">-+</label>
 							</div>
 							<div class="form-check">
-								<input class="form-check-input" type="checkbox" id="type4" value="option3">
-								<label for="type4">+-</label>
-							</div>
-						</div>
-						<div class="col-1 py-2 mx-1 bg-light rounded border border-info">
-							<label for="type">palat</label><br>
-							<div class="form-check">
-								<input class="form-check-input" type="checkbox" id="type1" value="option3">
-								<label for="type1">--</label>
-							</div>
-							<div class="form-check">
-								<input class="form-check-input" type="checkbox" id="type2" value="option3">
-								<label for="type2">++</label>
-							</div>
-							<div class="form-check">
-								<input class="form-check-input" type="checkbox" id="type3" value="option3">
-								<label for="type3">-+</label>
-							</div>
-							<div class="form-check">
-								<input class="form-check-input" type="checkbox" id="type4" value="option3">
-								<label for="type4">+-</label>
+								<input class="form-check-input" type="checkbox" id="filter_suffixes_length_type4" name="filter_suffixes_forms.length_3" value="+-">
+								<label for="filter_suffixes_length_type4">+-</label>
 							</div>
 						</div>
 						<div class="col-1 py-2 mx-1 bg-light rounded border border-info">
-							<label for="type">voicing</label><br>
+							<label>palat</label><br>
 							<div class="form-check">
-								<input class="form-check-input" type="checkbox" id="type1" value="option3">
-								<label for="type1">same</label>
+								<input class="form-check-input" type="checkbox" id="filter_suffixes_palat_type1" name="filter_suffixes_forms.palatalization_0" value="--">
+								<label for="filter_suffixes_palat_type1">--</label>
 							</div>
 							<div class="form-check">
-								<input class="form-check-input" type="checkbox" id="type3" value="option3">
-								<label for="type3">-+</label>
+								<input class="form-check-input" type="checkbox" id="filter_suffixes_palat_type2" name="filter_suffixes_forms.palatalization_1" value="++">
+								<label for="filter_suffixes_palat_type2">++</label>
 							</div>
 							<div class="form-check">
-								<input class="form-check-input" type="checkbox" id="type4" value="option3">
-								<label for="type4">+-</label>
+								<input class="form-check-input" type="checkbox" id="filter_suffixes_palat_type3" name="filter_suffixes_forms.palatalization_2" value="_+">
+								<label for="filter_suffixes_palat_type3">-+</label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" id="filter_suffixes_palat_type4" name="filter_suffixes_forms.palatalization_3" value="+-">
+								<label for="filter_suffixes_palat_type4">+-</label>
+							</div>
+						</div>
+						<div class="col-1 py-2 mx-1 bg-light rounded border border-info">
+							<label>voicing</label><br>
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" id="filter_suffixes_voicing_type1" name="filter_suffixes_forms.voicing_0" value="same">
+								<label for="filter_suffixes_voicing_type1">same</label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" id="filter_suffixes_voicing_type3" name="filter_suffixes_forms.voicing_1" value="-+">
+								<label for="filter_suffixes_voicing_type3">-+</label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" id="filter_suffixes_voicing_type4" name="filter_suffixes_forms.voicing_2" value="+-">
+								<label for="filter_suffixes_voicing_type4">+-</label>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 			<div class="form-row m-1">
-				<a class="btn btn-light col-12" data-toggle="collapse" href="#filter3" role="button" aria-expanded="false" aria-controls="filter3">alternations</a>
-				<div class="collapse multi-collapse my-1 mx-4 p-1 col" id="filter3">
+				<a class="btn btn-light col-12" data-toggle="collapse" href="#filter_alts" role="button" aria-expanded="false" aria-controls="filter_alts">alternations</a>
+				<div class="collapse multi-collapse my-1 mx-4 p-1 col" id="filter_alts">
 					<div class="row my-2">
 						<div class="col py-2 mx-1 bg-light rounded border border-info">
-							<label for="type">from</label><br>
+							<label>from</label><br>
 							<div style="overflow-y: scroll;height: 150px;">
+								{% for i, sound in from_sounds %}
 								<div class="form-check">
-									<input class="form-check-input" type="checkbox" id="type1" value="option3">
-									<label for="type1">--</label>
+									<input class="form-check-input" type="checkbox" id="filter_alts_from_type{{ i }}" name="filter_alternations.from_{{ i }}" value="{{ sound }}">
+									<label for="filter_alts_from_type{{ i }}">{{ sound }}</label>
 								</div>
-								<div class="form-check">
-									<input class="form-check-input" type="checkbox" id="type2" value="option3">
-									<label for="type2">++</label>
-								</div>
-								<div class="form-check">
-									<input class="form-check-input" type="checkbox" id="type3" value="option3">
-									<label for="type3">-+</label>
-								</div>
-								<div class="form-check">
-									<input class="form-check-input" type="checkbox" id="type4" value="option3">
-									<label for="type4">+-</label>
-								</div>
-								<div class="form-check">
-									<input class="form-check-input" type="checkbox" id="type4" value="option3">
-									<label for="type4">+-</label>
-								</div>
-								<div class="form-check">
-									<input class="form-check-input" type="checkbox" id="type4" value="option3">
-									<label for="type4">+-</label>
-								</div>
-								<div class="form-check">
-									<input class="form-check-input" type="checkbox" id="type4" value="option3">
-									<label for="type4">+-</label>
-								</div>
-								<div class="form-check">
-									<input class="form-check-input" type="checkbox" id="type4" value="option3">
-									<label for="type4">+-</label>
-								</div>
-								<div class="form-check">
-									<input class="form-check-input" type="checkbox" id="type4" value="option3">
-									<label for="type4">+-</label>
-								</div>
-								<div class="form-check">
-									<input class="form-check-input" type="checkbox" id="type4" value="option3">
-									<label for="type4">+-</label>
-								</div>
-								<div class="form-check">
-									<input class="form-check-input" type="checkbox" id="type4" value="option3">
-									<label for="type4">+-</label>
-								</div>
-								<div class="form-check">
-									<input class="form-check-input" type="checkbox" id="type4" value="option3">
-									<label for="type4">+-</label>
-								</div>
-								<div class="form-check">
-									<input class="form-check-input" type="checkbox" id="type4" value="option3">
-									<label for="type4">+-</label>
-								</div>
-								<div class="form-check">
-									<input class="form-check-input" type="checkbox" id="type4" value="option3">
-									<label for="type4">+-</label>
-								</div>
+								{% endfor %}
 							</div>
 						</div>
 						<div class="col py-2 mx-1 bg-light rounded border border-info">
-							<label for="type">to</label><br>
+							<label>to</label><br>
 							<div style="overflow-y: scroll;height: 150px;">
+								{% for i, sound in to_sounds %}
 								<div class="form-check">
-									<input class="form-check-input" type="checkbox" id="type1" value="option3">
-									<label for="type1">--</label>
+									<input class="form-check-input" type="checkbox" id="filter_alts_to_type{{ i }}" name="filter_alternations.to_{{ i }}" value="{{ sound }}">
+									<label for="filter_alts_to_type{{ i }}">{{ sound }}</label>
 								</div>
-								<div class="form-check">
-									<input class="form-check-input" type="checkbox" id="type2" value="option3">
-									<label for="type2">++</label>
-								</div>
-								<div class="form-check">
-									<input class="form-check-input" type="checkbox" id="type3" value="option3">
-									<label for="type3">-+</label>
-								</div>
-								<div class="form-check">
-									<input class="form-check-input" type="checkbox" id="type4" value="option3">
-									<label for="type4">+-</label>
-								</div>
+								{% endfor %}
 							</div>
 						</div>
 						<div class="col py-2 mx-1 bg-light rounded border border-info">
 							<div class="form-check">
-								<input class="form-check-input" type="checkbox" id="type1" value="option3">
-								<label for="type1">vowels</label>
+								<input class="form-check-input" type="checkbox" id="filter_alts_vowels" name="filter_alternations.isVowel_1" value="1">
+								<label for="filter_alts_vowels">vowels</label>
 							</div>
 							<div class="form-check">
-								<input class="form-check-input" type="checkbox" id="type3" value="option3">
-								<label for="type3">consonants</label>
+								<input class="form-check-input" type="checkbox" id="filter_alts_consonants" name="filter_alternations.isVowel_0" value="0">
+								<label for="filter_alts_consonants">consonants</label>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 			<div class="form-row m-1">
-				<a class="btn btn-light col-12" data-toggle="collapse" href="#filter4" role="button" aria-expanded="false" aria-controls="filter4">examples</a>
-				<div class="collapse multi-collapse my-1 mx-4 p-1 col" id="filter4">
+				<a class="btn btn-light col-12" data-toggle="collapse" href="#filter_examples" role="button" aria-expanded="false" aria-controls="filter_examples">examples</a>
+				<div class="collapse multi-collapse my-1 mx-4 p-1 col" id="filter_examples" >
 					<div class="row my-2">
 						<div class="col py-2 mx-1 bg-light rounded border border-info">
-							<label for="exampleFormControlInput1">cyrillic</label>
-							<input type="text" class="form-control" id="exampleFormControlInput1">
+							<label for="filter_examples_cyrillic">cyrillic</label>
+							<input type="text" class="form-control" id="filter_examples_cyrillic" name="filter_examples.cyrillic">
 						</div>
 						<div class="col py-2 mx-1 bg-light rounded border border-info">
-							<label for="exampleFormControlInput1">transcription</label>
-							<input type="text" class="form-control" id="exampleFormControlInput1">
+							<label for="filter_examples_transcription">transcription</label>
+							<input type="text" class="form-control" id="filter_examples_transcription" name="filter_examples.transcription">
 						</div>
 						<div class="col py-2 mx-1 bg-light rounded border border-info">
-							<label for="exampleFormControlInput1">definition</label>
-							<input type="text" class="form-control" id="exampleFormControlInput1">
+							<label for="filter_examples_definition">definition</label>
+							<input type="text" class="form-control" id="filter_examples_definition" name="filter_examples.definition">
 						</div>
 					</div>
 				</div>
@@ -541,53 +496,26 @@
 	</div>
 	<div class="row m-3">
 		<table class="table table-bordered table-striped">
-		  <thead>
-			<tr>
-			  <th class="text-center">
-				Extra small
-			  </th>
-			  <th class="text-center">
-				Small
-			  </th>
-			  <th class="text-center">
-				Medium
-			  </th>
-			  <th class="text-center">
-				Large
-			  </th>
-			  <th class="text-center">
-				Extra large
-			  </th>
-			</tr>
-		  </thead>
-		  <tbody>
-			<tr>
-			  <td>None (auto)</td>
-			  <td>540px</td>
-			  <td>720px</td>
-			  <td>960px</td>
-			  <td>1140px</td>
-			</tr>
-			<tr>
-			  <td><code>.col-</code></td>
-			  <td><code>.col-sm-</code></td>
-			  <td><code>.col-md-</code></td>
-			  <td><code>.col-lg-</code></td>
-			  <td><code>.col-xl-</code></td>
-			</tr>
-		  </tbody>
+			<thead>
+				<tr>
+					{% for column in columns %}
+					<th class="text-center">
+					{{column}}
+					</th>
+					{% endfor %}
+				</tr>
+			</thead>
+			<tbody>
+				{% for i in result %}
+				<tr>
+					{%for k in i%}
+				    <td>{{k}}</td>
+					{% endfor %}
+				</tr>
+				{% endfor %}
+			</tbody>
 		</table>
 	</div>
-	<!--{% for n, answer in answers %}-->
-	<!--<div class="row m-3">-->
-		<!--<div class="col-1">-->
-			<!--<h3>{{ n }}</h3>-->
-		<!--</div>-->
-		<!--<div class="col-11 bg-light rounded">-->
-			<!--<p class="card-text">{{ answer }}</p>-->
-		<!--</div>-->
-	<!--</div>-->
-	<!--{% endfor %}-->
 </div>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
