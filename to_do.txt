@@ -1,0 +1,55 @@
+
+lexemes examples
+using (id_lexeme) 
+
+lexemes derivatives
+1)using(id_lexem)
+2)lexemes.id_lexem = derivatives.derived_from
+
+lexemes alternations
+	lexemes derivatives using(id_lexeme)
+		derivatives alternations using(id_deriv)
+		
+lexemes suffixes_forms
+	lexemes derivatives using(id_lexeme)
+		derivatives suffixes_forms using(id_suffix_form)
+
+lexemes suffixes
+	lexemes derivatives using(id_lexeme)
+		derivatives suffixes_forms using(id_suffix_form)
+			suffixes_forms suffixes using(id_suffix)
+			
+derivatives examples
+using(id_lexem)
+
+derivatives alternations
+using(id_deriv)
+
+derivatives suffixes_forms
+using(id_suffixes_forms)
+
+derivatives suffixes
+	derivatives suffixes_form using(id_suffix_form)
+		suffixes_forms suffixes using(id_suffix)
+		
+alternations examples
+	alternations derivatives using(id_deriv)
+		derivatives examples using(id_lexem)
+		
+alternations suffixes_forms
+using(id_suffix)
+
+alternations suffixes
+	alternations suffixes_forms using(id_suffix)
+		suffixes_forms suffixes using(id_suffix_form)
+		
+suffixes_forms examples
+	suffixes_forms derivatives using(id_suffix_form)
+		derivatives examples using(id_lexeme)
+		
+suffixes_forms suffixes
+using(id_suffix)
+		
+
+
+по чему фильтр тот должен остаться, если оба задействованны в фильтре делаем иннер, если нет фильтров делаем иннер

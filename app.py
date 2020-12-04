@@ -1,8 +1,11 @@
 from flask import Flask, request, render_template
 import mysql.connector
 import re
+import itertools
+import networkx as nx
 
 app = Flask(__name__)
+
 
 def connect_to_db():
     global con
@@ -12,10 +15,14 @@ def connect_to_db():
     con = mysql.connector.connect(host='127.0.0.1', port=3306, database='kuruch', user='root', password=PASSWORD)
     cur = con.cursor(dictionary=True)
 
+
 def get_options_lists():
     global poses
     global from_sounds
     global to_sounds
+    global text_columns
+    global indexes_columns
+    global values_columns
 
     cur.execute("""
     SELECT DISTINCT pos FROM kuruch.lexemes;
@@ -36,15 +43,20 @@ def get_options_lists():
     to_sounds = [r['to'] for r in res if r['to'] is not None]
     to_sounds = sorted(to_sounds)
 
+    text_columns = ['cyrillic', 'transcription', 'definition', 'def', 'form_cyrillic', 'form_transcription', 'grammar',
+                    'root', 'form', 'meaning']
+    values_columns = ['type', 'type_alternation', 'isCn', 'length', 'palatalization', 'voicing', 'isVowel']
+
+    indexes_columns = {'pos':poses,'from':from_sounds,'to':to_sounds}
+    create_graph()
+
 
 def parse_filter(req):
     filter_dict = {}
     for s in req:
         name = s[0]
         table = name.split('.')[0].replace('filter_', '')
-        if table not in filter_dict:
-            filter_dict[table] = {}
-        column_value = s[0].split('.')[1]
+        column_value = name.split('.')[1]
         search = re.search(r'(\w*?)_(regex|\d\*?|)$', column_value)
         regex = None
         if search != None:
@@ -56,13 +68,15 @@ def parse_filter(req):
         else:
             column = column_value
             value = s[1]
-        if column not in filter_dict[table]:
-            filter_dict[table][column] = {'values': []}
-        if regex:
-            filter_dict[table][column]['regex'] = regex
-        else:
-            filter_dict[table][column]['values'].append(value)
-
+        if value != '':
+            if table not in filter_dict:
+                filter_dict[table] = {}
+            if column not in filter_dict[table]:
+                filter_dict[table][column] = {'values': []}
+            if regex:
+                filter_dict[table][column]['regex'] = regex
+            else:
+                filter_dict[table][column]['values'].append(value)
     return filter_dict
 
 
@@ -75,6 +89,7 @@ def parse_show(req):
             show_dict[table] = []
         show_dict[table].append(column)
     return show_dict
+
 
 def parse_request(req):
     show_list = []
@@ -94,79 +109,157 @@ def parse_request(req):
     return limit, show_dict, filter_dict
 
 
-# def search(filter_dict, show_dict, limit):
-#     for table, columns in filter_dict.items():
-#         conditions = []
-#         for column, values in columns.items():
-#             if 'regex' in values:
-#                 regex = values['regex']
-#                 if regex == 'b':
-#                     conds = [f'({table}.`{column}` LIKE "{value}%")' for value in values['values'] if len(value) > 0]
-#                 elif regex == 'e':
-#                     conds = [f'({table}.`{column}` LIKE "%{value}")' for value in values['values'] if len(value) > 0]
-#                 elif regex == 'i':
-#                     conds = [f'({table}.`{column}` LIKE "%{value}%")' for value in values['values'] if len(value) > 0]
-#             else:
-#                 conds = [f'({table}.`{column}` LIKE "%{value}%")' for value in values['values'] if len(value) > 0]
-#             conditions.extend(conds)
-#
-#         selects = ', '.join([f'`{column}`' for column in show_dict[table]])
-#         conditions = ' AND '.join(conditions)
-#
-#         req = f"""
-#         SELECT {selects} FROM kuruch.{table}
-#         WHERE {conditions}
-#         LIMIT {limit};
-#         """
-#         print(req)
-#         cur.execute(req)
-#         res = cur.fetchall()
-#         return show_dict[table], res
-#         break
+def create_graph():
+    global graph
+    tables = ['lexemes', 'derivatives', 'suffixes', 'suffixes_forms', 'alternations', 'examples']
+    db_dict = {'lexemes':{'examples':'id_lexeme',
+                           'derivatives':'id_lexem'},
+                'derivatives': {'lexemes':'id_lexem',
+                                'examples':'id_lexem',
+                                'alternations':'id_deriv',
+                                'suffixes_forms':'id_suffix_form'},
+                'alternations': {'suffixes_forms':'id_suffix_form',
+                                 'derivatives':'id_deriv'},
+                'suffixes_forms': {'suffixes':'id_suffix',
+                                   'alternations':'id_suffix_form',
+                                   'derivatives':'id_suffix_form'},
+                'suffixes': {'suffixes_forms':'id_suffix'},
+                'examples': {'derivatives':'id_lexem',
+                             'lexemes':'id_lexem'}}
+    graph = nx.Graph()
+    graph.add_nodes_from(tables)
+    for node, connections in db_dict.items():
+        for connection, key in connections.items():
+            graph.add_edge(node, connection, using=key)
+    return graph
 
 
-def search(table, filter_dict, show_dict, limit):
-    columns = filter_dict[table]
+def search(filter_dict, show_dict, limit):
     conditions = []
-    for column, values in columns.items():
-        if 'regex' in values:
-            regex = values['regex']
-            if regex == 'b':
-                conds = [f'({table}.`{column}` LIKE "{value}%")' for value in values['values'] if len(value) > 0]
-            elif regex == 'e':
-                conds = [f'({table}.`{column}` LIKE "%{value}")' for value in values['values'] if len(value) > 0]
-            elif regex == 'i':
-                conds = [f'({table}.`{column}` LIKE "%{value}%")' for value in values['values'] if len(value) > 0]
-        else:
-            conds = [f'({table}.`{column}` LIKE "%{value}%")' for value in values['values'] if len(value) > 0]
-        conditions.extend(conds)
+    selects = []
+    for table, columns in filter_dict.items():
+        for column, values in columns.items():
+            conds = []
+            if column in text_columns:
+                if 'regex' in values:
+                    regex = values['regex']
+                    if regex == 'b':
+                        conds = [f'({table}.`{column}` LIKE "{value}%")' for value in values['values']]
+                    elif regex == 'e':
+                        conds = [f'({table}.`{column}` LIKE "%{value}")' for value in values['values']]
+                    elif regex == 'i':
+                        conds = [f'({table}.`{column}` LIKE "%{value}%")' for value in values['values']]
+                else:
+                    conds = [f'({table}.`{column}` LIKE "%{value}%")' for value in values['values']]
+            elif column in values_columns:
+                if 'is' in column:
+                    conds = [f'({table}.`{column}` = {value})' for value in values['values']]
+                else:
+                    conds = []
+                    for value in values['values']:
+                        if value == '0':
+                            cond = f'({table}.`{column}` is NULL)'
+                        else:
+                            cond = f'({table}.`{column}` = "{value}")'
+                        conds.append(cond)
+            elif column in indexes_columns:
+                conds = [f'({table}.`{column}` = "{indexes_columns[column][value]}")' for value in values['values']]
+            conditions.extend(conds)
+        select = ', '.join([f'{table}.`{column}`' for column in show_dict[table]])
+        selects.append(select)
+    selects = ', '.join(selects)
+    conditions = '\n AND '.join(conditions)
 
-    selects = ', '.join([f'`{column}`' for column in show_dict[table]])
-    conditions = ' AND '.join(conditions)
+    tables = set(list(filter_dict.keys()) + list(show_dict.keys()))
+    path = find_path(tables,graph)
+    joins = put_inside_join(path, graph)
 
-    req = f"""
-    SELECT {selects} FROM kuruch.{table}
-    WHERE {conditions}
-    LIMIT {limit};
-    """
+    if len(conditions) == 0:
+        req = f"""
+            SELECT {selects} FROM {joins}
+            LIMIT {limit};
+            """
+    else:
+        req = f"""
+        SELECT {selects} FROM {joins}
+        WHERE {conditions}
+        LIMIT {limit};
+        """
     print(req)
     cur.execute(req)
     res = cur.fetchall()
     return show_dict[table], res
 
 
+def put_inside_join(path, graph, i=0):
+    string = ''
+    padding = '\t'*i
+    if i+1 < len(path)-1:
+        string = f'\n{padding}({path[i]} INNER JOIN ({put_inside_join(path, graph, i+1)})\n{padding}USING({graph.edges[path[i],path[i+1]]["using"]}))'
+    else:
+        string = f'\n{padding}({path[i]} INNER JOIN ({path[i+1]})\n{padding}USING({graph.edges[path[i],path[i+1]]["using"]}))'
+    return string
+
+# def search(table, filter_dict, show_dict, limit):
+#     columns = filter_dict[table]
+#     conditions = []
+#     for column, values in columns.items():
+#         if column in text_columns:
+#             if 'regex' in values:
+#                 regex = values['regex']
+#                 if regex == 'b':
+#                     conds = [f'({table}.`{column}` LIKE "{value}%")' for value in values['values']]
+#                 elif regex == 'e':
+#                     conds = [f'({table}.`{column}` LIKE "%{value}")' for value in values['values']]
+#                 elif regex == 'i':
+#                     conds = [f'({table}.`{column}` LIKE "%{value}%")' for value in values['values']]
+#             else:
+#                 conds = [f'({table}.`{column}` LIKE "%{value}%")' for value in values['values']]
+#         elif column in values_columns:
+#             if 'is' in column:
+#                 conds = [f'({table}.`{column}` = {value})' for value in values['values']]
+#             else:
+#                 conds = []
+#                 for value in values['values']:
+#                     if value == '0':
+#                         cond = f'({table}.`{column}` is NULL)'
+#                     else:
+#                         cond = f'({table}.`{column}` = "{value}")'
+#                     conds.append(cond)
+#         elif column in indexes_columns:
+#             conds = [f'({table}.`{column}` = "{indexes_columns[column][value]}")' for value in values['values']]
+#         conditions.extend(conds)
+#
+#     selects = ', '.join([f'`{column}`' for column in show_dict[table]])
+#     conditions = '\n AND '.join(conditions)
+#
+#     req = f"""
+#     SELECT {selects} FROM kuruch.{table}
+#     WHERE {conditions}
+#     LIMIT {limit};
+#     """
+#     print(req)
+#     cur.execute(req)
+#     res = cur.fetchall()
+#     return show_dict[table], res
+
+
+def find_path(tables, graph):
+    paths = []
+    for x in itertools.combinations(tables,2):
+        for path in nx.all_simple_paths(graph, *x):
+            if all(table in path for table in tables):
+                paths.append(path)
+    return sorted(paths, key=lambda x: len(x))[0]
+
+
 @app.route('/')
 def index():
     if request.args:
-        print(request.args)
         limit, show_dict, filter_dict = parse_request(request.args)
-        print(show_dict)
-        print(filter_dict)
-        columns, result = search('lexemes', filter_dict, show_dict, limit)
-        # columns, result = search(filter_dict, show_dict, limit)
-        print(columns)
+        # columns, result = search('lexemes', filter_dict, show_dict, limit)
+        columns, result = search(filter_dict, show_dict, limit)
         result = [list(r.values()) for r in result]
-        print(result)
         return render_template('index.html', poses=enumerate(poses), from_sounds=enumerate(from_sounds), to_sounds=enumerate(to_sounds), columns=columns, result=result)
     return render_template('index.html', poses=enumerate(poses), from_sounds=enumerate(from_sounds), to_sounds=enumerate(to_sounds), columns=[], result=[])
 
