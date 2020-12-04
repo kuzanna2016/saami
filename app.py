@@ -1,4 +1,4 @@
-from flask import Flask, request, render_template
+from flask import Flask, request, render_template, Response
 import mysql.connector
 import re
 import itertools
@@ -13,7 +13,7 @@ def connect_to_db():
     with open('config.txt', encoding='utf-8') as f:
         PASSWORD = f.read()
     con = mysql.connector.connect(host='127.0.0.1', port=3306, database='kuruch', user='root', password=PASSWORD)
-    cur = con.cursor(dictionary=True)
+    cur = con.cursor(dictionary=False)
 
 
 def get_options_lists():
@@ -28,19 +28,19 @@ def get_options_lists():
     SELECT DISTINCT pos FROM kuruch.lexemes;
     """)
     res = cur.fetchall()
-    poses = [r['pos'] for r in res if r['pos'] is not None]
+    poses = [r[0] for r in res if r[0] is not None]
     poses = sorted(poses, key=lambda x: x[1])
     cur.execute("""
     SELECT DISTINCT `from` FROM kuruch.alternations;
     """)
     res = cur.fetchall()
-    from_sounds = [r['from'] for r in res if r['from'] is not None]
+    from_sounds = [r[0] for r in res if r[0] is not None]
     from_sounds = sorted(from_sounds)
     cur.execute("""
         SELECT DISTINCT `to` FROM kuruch.alternations;
         """)
     res = cur.fetchall()
-    to_sounds = [r['to'] for r in res if r['to'] is not None]
+    to_sounds = [r[0] for r in res if r[0] is not None]
     to_sounds = sorted(to_sounds)
 
     text_columns = ['cyrillic', 'transcription', 'definition', 'def', 'form_cyrillic', 'form_transcription', 'grammar',
@@ -136,7 +136,7 @@ def create_graph():
 
 def search(filter_dict, show_dict, limit):
     conditions = []
-    selects = []
+    # selects = []
     for table, columns in filter_dict.items():
         for column, values in columns.items():
             conds = []
@@ -166,29 +166,37 @@ def search(filter_dict, show_dict, limit):
                 conds = [f'({table}.`{column}` = "{indexes_columns[column][value]}")' for value in values['values']]
             conditions.extend(conds)
         select = ', '.join([f'{table}.`{column}`' for column in show_dict[table]])
-        selects.append(select)
-    selects = ', '.join(selects)
+        # selects.append(select)
+    selects = []
+    for table, columns in show_dict.items():
+        for c in columns:
+            selects.append(f'{table}.`{c}`')
+    selects_str = ', '.join(selects)
     conditions = '\n AND '.join(conditions)
 
     tables = set(list(filter_dict.keys()) + list(show_dict.keys()))
-    path = find_path(tables,graph)
-    joins = put_inside_join(path, graph)
+
+    if len(tables) <= 1:
+        joins = list(tables)[0]
+    else:
+        path = find_path(tables,graph)
+        joins = put_inside_join(path, graph)
 
     if len(conditions) == 0:
         req = f"""
-            SELECT {selects} FROM {joins}
+            SELECT {selects_str} FROM {joins}
             LIMIT {limit};
             """
     else:
         req = f"""
-        SELECT {selects} FROM {joins}
+        SELECT {selects_str} FROM {joins}
         WHERE {conditions}
         LIMIT {limit};
         """
     print(req)
     cur.execute(req)
     res = cur.fetchall()
-    return show_dict[table], res
+    return selects, res
 
 
 def put_inside_join(path, graph, i=0):
@@ -199,49 +207,6 @@ def put_inside_join(path, graph, i=0):
     else:
         string = f'\n{padding}({path[i]} INNER JOIN ({path[i+1]})\n{padding}USING({graph.edges[path[i],path[i+1]]["using"]}))'
     return string
-
-# def search(table, filter_dict, show_dict, limit):
-#     columns = filter_dict[table]
-#     conditions = []
-#     for column, values in columns.items():
-#         if column in text_columns:
-#             if 'regex' in values:
-#                 regex = values['regex']
-#                 if regex == 'b':
-#                     conds = [f'({table}.`{column}` LIKE "{value}%")' for value in values['values']]
-#                 elif regex == 'e':
-#                     conds = [f'({table}.`{column}` LIKE "%{value}")' for value in values['values']]
-#                 elif regex == 'i':
-#                     conds = [f'({table}.`{column}` LIKE "%{value}%")' for value in values['values']]
-#             else:
-#                 conds = [f'({table}.`{column}` LIKE "%{value}%")' for value in values['values']]
-#         elif column in values_columns:
-#             if 'is' in column:
-#                 conds = [f'({table}.`{column}` = {value})' for value in values['values']]
-#             else:
-#                 conds = []
-#                 for value in values['values']:
-#                     if value == '0':
-#                         cond = f'({table}.`{column}` is NULL)'
-#                     else:
-#                         cond = f'({table}.`{column}` = "{value}")'
-#                     conds.append(cond)
-#         elif column in indexes_columns:
-#             conds = [f'({table}.`{column}` = "{indexes_columns[column][value]}")' for value in values['values']]
-#         conditions.extend(conds)
-#
-#     selects = ', '.join([f'`{column}`' for column in show_dict[table]])
-#     conditions = '\n AND '.join(conditions)
-#
-#     req = f"""
-#     SELECT {selects} FROM kuruch.{table}
-#     WHERE {conditions}
-#     LIMIT {limit};
-#     """
-#     print(req)
-#     cur.execute(req)
-#     res = cur.fetchall()
-#     return show_dict[table], res
 
 
 def find_path(tables, graph):
@@ -255,14 +220,24 @@ def find_path(tables, graph):
 
 @app.route('/')
 def index():
+    global result, columns
     if request.args:
         limit, show_dict, filter_dict = parse_request(request.args)
-        # columns, result = search('lexemes', filter_dict, show_dict, limit)
         columns, result = search(filter_dict, show_dict, limit)
-        result = [list(r.values()) for r in result]
+
         return render_template('index.html', poses=enumerate(poses), from_sounds=enumerate(from_sounds), to_sounds=enumerate(to_sounds), columns=columns, result=result)
     return render_template('index.html', poses=enumerate(poses), from_sounds=enumerate(from_sounds), to_sounds=enumerate(to_sounds), columns=[], result=[])
 
+@app.route("/getCSV")
+def getPlotCSV():
+    # with open("outputs/Adjacency.csv") as fp:
+    #     csv = fp.read()
+    csv = ";".join(columns) + '\n' + '\n'.join([';'.join(r) for r in result])
+    return Response(
+        csv,
+        mimetype="text/csv",
+        headers={"Content-disposition":
+                 "attachment; filename=data.csv"})
 
 if __name__ == '__main__':
     connect_to_db()
